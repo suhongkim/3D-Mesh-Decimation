@@ -322,6 +322,60 @@ embed-resource/fast:
 	$(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/build
 .PHONY : embed-resource/fast
 
+MyGlCanvas.o: MyGlCanvas.cpp.o
+
+.PHONY : MyGlCanvas.o
+
+# target to build an object file
+MyGlCanvas.cpp.o:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o
+.PHONY : MyGlCanvas.cpp.o
+
+MyGlCanvas.i: MyGlCanvas.cpp.i
+
+.PHONY : MyGlCanvas.i
+
+# target to preprocess a source file
+MyGlCanvas.cpp.i:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.i
+.PHONY : MyGlCanvas.cpp.i
+
+MyGlCanvas.s: MyGlCanvas.cpp.s
+
+.PHONY : MyGlCanvas.s
+
+# target to generate assembly for a file
+MyGlCanvas.cpp.s:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.s
+.PHONY : MyGlCanvas.cpp.s
+
+NanoguiMeshApp.o: NanoguiMeshApp.cpp.o
+
+.PHONY : NanoguiMeshApp.o
+
+# target to build an object file
+NanoguiMeshApp.cpp.o:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o
+.PHONY : NanoguiMeshApp.cpp.o
+
+NanoguiMeshApp.i: NanoguiMeshApp.cpp.i
+
+.PHONY : NanoguiMeshApp.i
+
+# target to preprocess a source file
+NanoguiMeshApp.cpp.i:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.i
+.PHONY : NanoguiMeshApp.cpp.i
+
+NanoguiMeshApp.s: NanoguiMeshApp.cpp.s
+
+.PHONY : NanoguiMeshApp.s
+
+# target to generate assembly for a file
+NanoguiMeshApp.cpp.s:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.s
+.PHONY : NanoguiMeshApp.cpp.s
+
 obj_view.o: obj_view.cpp.o
 
 .PHONY : obj_view.o
@@ -427,6 +481,12 @@ help:
 	@echo "... glfw_objects"
 	@echo "... glfw"
 	@echo "... embed-resource"
+	@echo "... MyGlCanvas.o"
+	@echo "... MyGlCanvas.i"
+	@echo "... MyGlCanvas.s"
+	@echo "... NanoguiMeshApp.o"
+	@echo "... NanoguiMeshApp.i"
+	@echo "... NanoguiMeshApp.s"
 	@echo "... obj_view.o"
 	@echo "... obj_view.i"
 	@echo "... obj_view.s"

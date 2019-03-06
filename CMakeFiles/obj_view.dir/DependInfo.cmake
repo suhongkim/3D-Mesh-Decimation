@@ -25,8 +25,11 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "lib/nanogui/ext/nanovg/src"
   "lib/nanogui/ext/eigen"
   "lib/embed-resource"
+  "src"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o"
+  "/home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o"
   "/home/suhongk/Documents/CMPT764_GM/assignment2/obj_view.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/obj_view.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -46,6 +49,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "lib/nanogui/ext/nanovg/src"
   "lib/nanogui/ext/eigen"
   "lib/embed-resource"
+  "src"
   )
 
 # Targets to which this target links.

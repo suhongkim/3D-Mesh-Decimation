@@ -89,9 +89,57 @@ CMakeFiles/obj_view.dir/obj_view.cpp.o.provides: CMakeFiles/obj_view.dir/obj_vie
 CMakeFiles/obj_view.dir/obj_view.cpp.o.provides.build: CMakeFiles/obj_view.dir/obj_view.cpp.o
 
 
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o: CMakeFiles/obj_view.dir/flags.make
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o: MyGlCanvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.cpp
+
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj_view.dir/MyGlCanvas.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.cpp > CMakeFiles/obj_view.dir/MyGlCanvas.cpp.i
+
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj_view.dir/MyGlCanvas.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.cpp -o CMakeFiles/obj_view.dir/MyGlCanvas.cpp.s
+
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.requires
+
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.provides: CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.provides.build
+.PHONY : CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.provides
+
+CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.provides.build: CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o
+
+
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o: CMakeFiles/obj_view.dir/flags.make
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o: NanoguiMeshApp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.cpp
+
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.cpp > CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.i
+
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.cpp -o CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.s
+
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.requires:
+
+.PHONY : CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.requires
+
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.provides: CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.requires
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.provides.build
+.PHONY : CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.provides
+
+CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.provides.build: CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o
+
+
 CMakeFiles/obj_view.dir/shader/vert.glsl.c.o: CMakeFiles/obj_view.dir/flags.make
 CMakeFiles/obj_view.dir/shader/vert.glsl.c.o: shader/vert.glsl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/obj_view.dir/shader/vert.glsl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/obj_view.dir/shader/vert.glsl.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/obj_view.dir/shader/vert.glsl.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/shader/vert.glsl.c
 
 CMakeFiles/obj_view.dir/shader/vert.glsl.c.i: cmake_force
@@ -115,7 +163,7 @@ CMakeFiles/obj_view.dir/shader/vert.glsl.c.o.provides.build: CMakeFiles/obj_view
 
 CMakeFiles/obj_view.dir/shader/frag.glsl.c.o: CMakeFiles/obj_view.dir/flags.make
 CMakeFiles/obj_view.dir/shader/frag.glsl.c.o: shader/frag.glsl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/obj_view.dir/shader/frag.glsl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/obj_view.dir/shader/frag.glsl.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/obj_view.dir/shader/frag.glsl.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/shader/frag.glsl.c
 
 CMakeFiles/obj_view.dir/shader/frag.glsl.c.i: cmake_force
@@ -140,6 +188,8 @@ CMakeFiles/obj_view.dir/shader/frag.glsl.c.o.provides.build: CMakeFiles/obj_view
 # Object files for target obj_view
 obj_view_OBJECTS = \
 "CMakeFiles/obj_view.dir/obj_view.cpp.o" \
+"CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o" \
+"CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o" \
 "CMakeFiles/obj_view.dir/shader/vert.glsl.c.o" \
 "CMakeFiles/obj_view.dir/shader/frag.glsl.c.o"
 
@@ -147,12 +197,14 @@ obj_view_OBJECTS = \
 obj_view_EXTERNAL_OBJECTS =
 
 obj_view: CMakeFiles/obj_view.dir/obj_view.cpp.o
+obj_view: CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o
+obj_view: CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o
 obj_view: CMakeFiles/obj_view.dir/shader/vert.glsl.c.o
 obj_view: CMakeFiles/obj_view.dir/shader/frag.glsl.c.o
 obj_view: CMakeFiles/obj_view.dir/build.make
 obj_view: lib/nanogui/libnanogui.so
 obj_view: CMakeFiles/obj_view.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable obj_view"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable obj_view"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/obj_view.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -161,6 +213,8 @@ CMakeFiles/obj_view.dir/build: obj_view
 .PHONY : CMakeFiles/obj_view.dir/build
 
 CMakeFiles/obj_view.dir/requires: CMakeFiles/obj_view.dir/obj_view.cpp.o.requires
+CMakeFiles/obj_view.dir/requires: CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o.requires
+CMakeFiles/obj_view.dir/requires: CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o.requires
 CMakeFiles/obj_view.dir/requires: CMakeFiles/obj_view.dir/shader/vert.glsl.c.o.requires
 CMakeFiles/obj_view.dir/requires: CMakeFiles/obj_view.dir/shader/frag.glsl.c.o.requires
 

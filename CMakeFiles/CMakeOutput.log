@@ -2043,3 +2043,167 @@ make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMake
 Return value: 1
 Source file was:
 int main(int argc, char **argv) { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e9bf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e9bf.dir/build.make CMakeFiles/cmTC_0e9bf.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e9bf.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_0e9bf.dir/CheckIncludeFile.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0e9bf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e9bf.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_0e9bf.dir/CheckIncludeFile.c.o  -o cmTC_0e9bf -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3a7c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d3a7c.dir/build.make CMakeFiles/cmTC_d3a7c.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3a7c.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d3a7c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d3a7c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3a7c.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_d3a7c.dir/CheckFunctionExists.c.o  -o cmTC_d3a7c -rdynamic -lpthread 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9dc06/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9dc06.dir/build.make CMakeFiles/cmTC_9dc06.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9dc06.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_9dc06.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9dc06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dc06.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_9dc06.dir/CheckFunctionExists.c.o  -o cmTC_9dc06 -rdynamic /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd770/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd770.dir/build.make CMakeFiles/cmTC_bd770.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd770.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_bd770.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bd770
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd770.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_bd770.dir/CheckFunctionExists.c.o  -o cmTC_bd770 -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ace55/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ace55.dir/build.make CMakeFiles/cmTC_ace55.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ace55.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_ace55.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ace55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ace55.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_ace55.dir/CheckFunctionExists.c.o  -o cmTC_ace55 -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_414d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_414d8.dir/build.make CMakeFiles/cmTC_414d8.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_414d8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_414d8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_414d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_414d8.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_414d8.dir/CheckFunctionExists.c.o  -o cmTC_414d8 -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0dabf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0dabf.dir/build.make CMakeFiles/cmTC_0dabf.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0dabf.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_0dabf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0dabf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0dabf.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_0dabf.dir/CheckFunctionExists.c.o  -o cmTC_0dabf -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ce9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ce9c.dir/build.make CMakeFiles/cmTC_2ce9c.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ce9c.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_2ce9c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2ce9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ce9c.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_2ce9c.dir/CheckFunctionExists.c.o  -o cmTC_2ce9c -rdynamic -lICE 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAS_CPP14_FLAG succeeded with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_085a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_085a4.dir/build.make CMakeFiles/cmTC_085a4.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_085a4.dir/src.cxx.o
+/usr/bin/c++     -std=c++14 -Wall -Wextra -DHAS_CPP14_FLAG   -std=c++14 -o CMakeFiles/cmTC_085a4.dir/src.cxx.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_085a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_085a4.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++14 -Wall -Wextra -DHAS_CPP14_FLAG    CMakeFiles/cmTC_085a4.dir/src.cxx.o  -o cmTC_085a4 -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_CPP11_FLAG succeeded with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2b7d6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2b7d6.dir/build.make CMakeFiles/cmTC_2b7d6.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b7d6.dir/src.cxx.o
+/usr/bin/c++     -std=c++14 -Wall -Wextra -DHAS_CPP11_FLAG   -std=c++11 -o CMakeFiles/cmTC_2b7d6.dir/src.cxx.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2b7d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b7d6.dir/link.txt --verbose=1
+/usr/bin/c++    -std=c++14 -Wall -Wextra -DHAS_CPP11_FLAG    CMakeFiles/cmTC_2b7d6.dir/src.cxx.o  -o cmTC_2b7d6 -rdynamic 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_LTO succeeded with the following output:
+Change Dir: /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0edc9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0edc9.dir/build.make CMakeFiles/cmTC_0edc9.dir/build
+make[1]: Entering directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0edc9.dir/src.cxx.o
+/usr/bin/c++     -fvisibility=hidden  -std=c++14 -Wall -Wextra -std=c++14 -DHAS_LTO -flto -fno-fat-lto-objects   -o CMakeFiles/cmTC_0edc9.dir/src.cxx.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp/src.cxx
+/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp/src.cxx:1:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main(int argc, char **argv) { return 0; }
+              ^
+/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp/src.cxx:1:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main(int argc, char **argv) { return 0; }
+                           ^
+Linking CXX executable cmTC_0edc9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0edc9.dir/link.txt --verbose=1
+/usr/bin/c++   -fvisibility=hidden  -std=c++14 -Wall -Wextra -std=c++14 -DHAS_LTO -flto -fno-fat-lto-objects    CMakeFiles/cmTC_0edc9.dir/src.cxx.o  -o cmTC_0edc9 -rdynamic -flto 
+make[1]: Leaving directory '/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+int main(int argc, char **argv) { return 0; }

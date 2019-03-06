@@ -13,5 +13,7 @@ add_subdirectory(lib/embed-resource)
 
 embed_resources(MyResources shader/vert.glsl shader/frag.glsl)
 
-add_executable(obj_view obj_view.cpp ${MyResources})
+include_directories(src/)
+
+add_executable(obj_view obj_view.cpp MyGlCanvas.cpp NanoguiMeshApp.cpp ${MyResources})
 target_link_libraries(obj_view nanogui ${NANOGUI_EXTRA_LIBS})
