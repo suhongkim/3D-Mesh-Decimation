@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -O3 -DNDEBUG   CMakeFiles/mytest.dir/test.cpp.o CMakeFiles/mytest.dir/shader/vert.glsl.c.o CMakeFiles/mytest.dir/shader/frag.glsl.c.o  -o mytest lib/nanogui/libnanogui.so -lGL -lXxf86vm -lXrandr -lXinerama -lXcursor -lXi -lX11 -lpthread -lrt -ldl -Wl,-rpath,/home/suhongk/Documents/CMPT764_GM/nanogui_cmpt_464/lib/nanogui 

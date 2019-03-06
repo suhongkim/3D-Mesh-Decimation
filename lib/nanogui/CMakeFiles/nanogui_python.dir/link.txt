@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -std=c++14 -Wall -Wextra -std=c++14 -O3 -DNDEBUG  -shared -Wl,-soname,nanogui.so -o python/nanogui.so CMakeFiles/nanogui_python.dir/python/python.cpp.o CMakeFiles/nanogui_python.dir/ext/coro/coro.c.o libnanogui.so -lGL -lXxf86vm -lXrandr -lXinerama -lXcursor -lXi -lX11 -lpthread -ldl -lrt -Wl,-rpath,/home/wallace/Desktop/nano/nanogui-test/lib/nanogui 

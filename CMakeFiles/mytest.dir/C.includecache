@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/suhongk/Documents/CMPT764_GM/nanogui_cmpt_464/shader/frag.glsl.c
+stdlib.h
+-
+
+/home/suhongk/Documents/CMPT764_GM/nanogui_cmpt_464/shader/vert.glsl.c
+stdlib.h
+-
+

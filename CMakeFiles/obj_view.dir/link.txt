@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -O3 -DNDEBUG   CMakeFiles/obj_view.dir/obj_view.cpp.o CMakeFiles/obj_view.dir/shader/vert.glsl.c.o CMakeFiles/obj_view.dir/shader/frag.glsl.c.o  -o obj_view lib/nanogui/libnanogui.so -lGL -lXxf86vm -lXrandr -lXinerama -lXcursor -lXi -lX11 -lpthread -lrt -ldl -Wl,-rpath,/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui 
