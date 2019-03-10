@@ -15,5 +15,5 @@ embed_resources(MyResources shader/vert.glsl shader/frag.glsl)
 
 include_directories(src/)
 
-add_executable(obj_view obj_view.cpp MyGlCanvas_a2.cpp NanoguiMeshApp.cpp ${MyResources})
-target_link_libraries(obj_view nanogui ${NANOGUI_EXTRA_LIBS})
+add_executable(mcaq main.cpp MyGlCanvas_a2.cpp NanoguiMeshApp.cpp MeshDecimation.cpp ${MyResources})
+target_link_libraries(mcaq nanogui ${NANOGUI_EXTRA_LIBS})

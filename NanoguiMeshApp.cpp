@@ -5,192 +5,206 @@ using namespace nanogui;
 using namespace std;  
 
 NanoguiMeshApp::NanoguiMeshApp(): nanogui::Screen(Eigen::Vector2i(900, 600), "NanoGUI Cube and Menus", false) {
-  using namespace nanogui;
+    using namespace nanogui;
 
-	//First, we need to create a window context in which we will render both the interface and OpenGL canvas
-  Window *window = new Window(this, "GLCanvas Demo");
-  window->setPosition(Vector2i(15, 15));
-  window->setLayout(new GroupLayout());
+    //First, we need to create a window context in which we will render both the interface and OpenGL canvas
+    Window *window = new Window(this, "GLCanvas Demo");
+    window->setPosition(Vector2i(15, 15));
+    window->setLayout(new GroupLayout());
 
-	//OpenGL canvas initialization, we can control the background color and also its size
-  mCanvas = new MyGLCanvas(window);
-  mCanvas->setBackgroundColor({100, 100, 100, 255});
-  mCanvas->setSize({400, 400});
+    //OpenGL canvas initialization, we can control the background color and also its size
+    mCanvas = new MyGLCanvas(window);
+    mCanvas->setBackgroundColor({100, 100, 100, 255});
+    mCanvas->setSize({400, 400});
 
-  // Initialize with Defulat Object(cube)
-  string file_path = "./cube_obj.obj";
-  NanoguiMeshApp::load_obj(file_path, objPositions, objIndices);
-  mCanvas->updateNewMesh(objPositions, objIndices);
-
-	//This is how we add widgets, in this case, they are connected to the same window as the OpenGL canvas
-  Widget *tools = new Widget(window);
-  tools->setLayout(new BoxLayout(Orientation::Horizontal, Alignment::Middle, 0, 5));
-                                       
-	//then we start adding elements one by one as shown below
-  Button *b0 = new Button(tools, "Random Color");
-  b0->setCallback([this]() { mCanvas->setBackgroundColor(Vector4i(rand() % 256, rand() % 256, rand() % 256, 255)); });
-
-
-  Button *b1 = new Button(tools, "Random Rotation");
-  b1->setCallback([this]() {
-    radians[0] = (rand() % 100) / 100.0f;
-    radians[1] = (rand() % 100) / 100.0f;
-    radians[2] = (rand() % 100) / 100.0f;
-    mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1], radians[2]));
-  });
-
-  Button *b2 = new Button(tools, "QUIT");
-  b2->setCallback([this]() {
-    exit(1);
-  });
-
-  //widgets demonstration
-  nanogui::GLShader mShader;
-
-	//Then, we can create another window and insert other widgets into it
-	Window *anotherWindow = new Window(this, "Basic widgets");
-  anotherWindow->setPosition(Vector2i(500, 15));
-  anotherWindow->setLayout(new GroupLayout());
-
-  new Label(window, "Rotation on the first axis", "sans-bold");
-
-  // New Mesh : Open obj file and load object
-  new Label(anotherWindow, "Open / Save", "sans-bold");
-  Button *b_open = new Button(anotherWindow, "New Mesh");
-  b_open->setCallback([&] {
-    string file_path =  file_dialog(
-      { {"png", "Portable Network Graphics"}, {"txt", "Text file"}, {"obj", "Obj File"} }, false);
-
+    // Initialize with Defulat Object(cube)
+    string file_path = "./cube_obj.obj";
     NanoguiMeshApp::load_obj(file_path, objPositions, objIndices);
     mCanvas->updateNewMesh(objPositions, objIndices);
 
-    cout << " update is done" << endl;
-  });
-  b_open->setTooltip("Open New Mes");
+    //This is how we add widgets, in this case, they are connected to the same window as the OpenGL canvas
+    Widget *tools = new Widget(window);
+    tools->setLayout(new BoxLayout(Orientation::Horizontal, Alignment::Middle, 0, 5));
+                                        
+    //then we start adding elements one by one as shown below
+    Button *b0 = new Button(tools, "Random Color");
+    b0->setCallback([this]() { mCanvas->setBackgroundColor(Vector4i(rand() % 256, rand() % 256, rand() % 256, 255)); });
 
-  // Save to File : Save obj to file
-  Button *b_save = new Button(anotherWindow, "Save to File");
-  b_save->setCallback([&] {
-    string file_path =  file_dialog(
-      { {"png", "Portable Network Graphics"}, {"txt", "Text file"}, {"obj", "Obj File"} }, true);
-      NanoguiMeshApp::save_obj(file_path, objPositions, objIndices);
-  });
-  b_save->setTooltip("Save your mesh");
+    Button *b1 = new Button(tools, "Random Rotation");
+    b1->setCallback([this]() {
+      radians[0] = (rand() % 100) / 100.0f;
+      radians[1] = (rand() % 100) / 100.0f;
+      radians[2] = (rand() % 100) / 100.0f;
+      mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1], radians[2]));
+    });
 
+    Button *b2 = new Button(tools, "QUIT");
+    b2->setCallback([this]() {
+      exit(1);
+    });
 
-  // Option for Shading
-  new Label(anotherWindow, "Choose Mesh Form", "sans-bold");
-  ComboBox *combo = new ComboBox(anotherWindow, { "Flat Shaded", "Smooth Shaded", "In Wireframe", "Shaded with Mesh"} );
-    combo->setCallback([&](int value) {
-    mCanvas->updateMeshForm(value);
-  });
+    //widgets demonstration
+    nanogui::GLShader mShader;
 
-  // Option for Zooming
-  new Label(anotherWindow, "Zooming", "sans-bold");
-  Widget *panel = new Widget(anotherWindow);
-  panel->setLayout(new BoxLayout(Orientation::Horizontal,
-                                  Alignment::Middle, 0, 20));
-  Slider *slider = new Slider(panel);
-  slider->setValue(0.5f);
-  slider->setFixedWidth(80);
-  TextBox *textBox = new TextBox(panel);
-  textBox->setFixedSize(Vector2i(60, 25));
-  textBox->setValue("100");
-  textBox->setUnits("%");
-  slider->setCallback([textBox](float value) {
-      textBox->setValue(std::to_string((int) (4*value * 100)));
-  });
-  slider->setFinalCallback([&](float value) {
-      cout << "Final slider value: " << (int) (4*value * 100) << endl;
-      //100% : [-1, 1]
-      mCanvas->setScaling(Eigen::Vector3f(4*value, 4*value, 4*value));
-  });
-  textBox->setFixedSize(Vector2i(60,25));
-  textBox->setFontSize(20);
-  textBox->setAlignment(TextBox::Alignment::Right);
+    //Then, we can create another window and insert other widgets into it
+    Window *anotherWindow = new Window(this, "Basic widgets");
+    anotherWindow->setPosition(Vector2i(500, 15));
+    anotherWindow->setLayout(new GroupLayout());
 
-  // Rotation slots : XYZ
-  new Label(anotherWindow, "Rotation (X, Y, Z)", "sans-bold");
-  Widget *panelRot = new Widget(anotherWindow);
-  panelRot->setLayout(new BoxLayout(Orientation::Vertical,
-                                      Alignment::Middle, 0, 0));
-  Slider *rotSlider = new Slider(panelRot);
-  rotSlider->setValue(0.5f);
-  rotSlider->setFixedWidth(150);
-  rotSlider->setCallback([&](float value) {
-    // the middle point should be 0 rad
-    // then we need to multiply by 2 to make it go from -1. to 1.
-    // then we make it go from -2*M_PI to 2*M_PI
-  radians[0] = (value - 0.5f)*2*2*M_PI;
-    //then use this to rotate on just one axis
-  mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1],radians[2]));
-      //when you implement the other sliders and/or the Arcball, you need to keep track
-      //of the other rotations used for the second and third axis... It will not stay as 0.0f
-  });
-  rotSlider->setTooltip("X");
+    new Label(window, "Rotation on the first axis", "sans-bold");
 
-  Slider *rotSlider2 = new Slider(panelRot);
-  rotSlider2->setValue(0.5f);
-  rotSlider2->setFixedWidth(150);
-  rotSlider2->setCallback([&](float value) {
-  radians[1] = (value - 0.5f)*2*2*M_PI;
-  mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1],radians[2]));
-  });
-  rotSlider2->setTooltip("Y");
-  Slider *rotSlider3 = new Slider(panelRot);
-  rotSlider3->setValue(0.5f);
-  rotSlider3->setFixedWidth(150);
-  rotSlider3->setCallback([&](float value) {
-  radians[2] = (value - 0.5f)*2*2*M_PI;
-  mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1], radians[2]));
-  });
-  rotSlider3->setTooltip("Z");
+    // New Mesh : Open obj file and load object
+    new Label(anotherWindow, "Open / Save", "sans-bold");
+    Button *b_open = new Button(anotherWindow, "New Mesh");
+    b_open->setCallback([&] {
+      string file_path =  file_dialog(
+        { {"png", "Portable Network Graphics"}, {"txt", "Text file"}, {"obj", "Obj File"} }, false);
 
-  // Translation slots : XYZ (abs)
-  new Label(anotherWindow, "Translation (X, Y, Z)", "sans-bold");
-  Widget *panelRot2 = new Widget(anotherWindow);
-  panelRot2->setLayout(new BoxLayout(Orientation::Vertical,
-                                      Alignment::Middle, 0, 0));
-  Slider *rotSliderX = new Slider(panelRot2);
-  rotSliderX->setValue(0.5f);
-  rotSliderX->setFixedWidth(150);
-  rotSliderX->setCallback([&](float value) {
-    positions[0] = value-0.5;
-    mCanvas->setTranslation(Eigen::Vector3f(positions[0], positions[1], positions[2]));
-  });
-  rotSliderX->setTooltip("X");
+      NanoguiMeshApp::load_obj(file_path, objPositions, objIndices);
+      mCanvas->updateNewMesh(objPositions, objIndices);
 
-  Slider *rotSliderY = new Slider(panelRot2);
-  rotSliderY->setValue(0.5f);
-  rotSliderY->setFixedWidth(150);
-  rotSliderY->setCallback([&](float value) {
-    positions[1] = value-0.5;
-    mCanvas->setTranslation(Eigen::Vector3f(positions[0], positions[1], positions[2]));
-  });
-  rotSliderY->setTooltip("Y");
+      cout << " update is done" << endl;
+    });
+    b_open->setTooltip("Open New Mes");
 
-  Slider *rotSliderZ = new Slider(panelRot2);
-  rotSliderZ->setValue(0.5f);
-  rotSliderZ->setFixedWidth(150);
-  rotSliderZ->setCallback([&](float value) {
-    positions[2] = value-0.5;
-    mCanvas->setTranslation(Eigen::Vector3f(positions[0], positions[1], positions[2]));
-  });
-  rotSliderZ->setTooltip("Z (Not possible to see)");
+    // Save to File : Save obj to file
+    Button *b_save = new Button(anotherWindow, "Save to File");
+    b_save->setCallback([&] {
+      string file_path =  file_dialog(
+        { {"png", "Portable Network Graphics"}, {"txt", "Text file"}, {"obj", "Obj File"} }, true);
+        NanoguiMeshApp::save_obj(file_path, objPositions, objIndices);
+    });
+    b_save->setTooltip("Save your mesh");
 
 
-  new Label(anotherWindow, "Check box", "sans-bold");
-  CheckBox *cb = new CheckBox(anotherWindow, "Flag 1",
-      [](bool state) { cout << "Check box 1 state: " << state << endl; }
-  );
-  cb->setChecked(true);
-  cb = new CheckBox(anotherWindow, "Flag 2",
-      [](bool state) { cout << "Check box 2 state: " << state << endl; }
-  );
+    // Option for Shading
+    new Label(anotherWindow, "Choose Mesh Form", "sans-bold");
+    ComboBox *combo = new ComboBox(anotherWindow, { "Flat Shaded", "Smooth Shaded", "In Wireframe", "Shaded with Mesh"} );
+      combo->setCallback([&](int value) {
+      mCanvas->updateMeshForm(value);
+    });
 
+    // Option for Zooming
+    new Label(anotherWindow, "Zooming", "sans-bold");
+    Widget *panel = new Widget(anotherWindow);
+    panel->setLayout(new BoxLayout(Orientation::Horizontal,
+                                    Alignment::Middle, 0, 20));
+    Slider *slider = new Slider(panel);
+    slider->setValue(0.5f);
+    slider->setFixedWidth(80);
+    TextBox *textBox = new TextBox(panel);
+    textBox->setFixedSize(Vector2i(60, 25));
+    textBox->setValue("100");
+    textBox->setUnits("%");
+    slider->setCallback([textBox](float value) {
+        textBox->setValue(std::to_string((int) (4*value * 100)));
+    });
+    slider->setFinalCallback([&](float value) {
+        cout << "Final slider value: " << (int) (4*value * 100) << endl;
+        //100% : [-1, 1]
+        mCanvas->setScaling(Eigen::Vector3f(4*value, 4*value, 4*value));
+    });
+    textBox->setFixedSize(Vector2i(60,25));
+    textBox->setFontSize(20);
+    textBox->setAlignment(TextBox::Alignment::Right);
 
-	//Method to assemble the interface defined before it is called
-  performLayout();
+    // Rotation slots : XYZ
+    new Label(anotherWindow, "Rotation (X, Y, Z)", "sans-bold");
+    Widget *panelRot = new Widget(anotherWindow);
+    panelRot->setLayout(new BoxLayout(Orientation::Vertical,
+                                        Alignment::Middle, 0, 0));
+    Slider *rotSlider = new Slider(panelRot);
+    rotSlider->setValue(0.5f);
+    rotSlider->setFixedWidth(150);
+    rotSlider->setCallback([&](float value) {
+      // the middle point should be 0 rad
+      // then we need to multiply by 2 to make it go from -1. to 1.
+      // then we make it go from -2*M_PI to 2*M_PI
+    radians[0] = (value - 0.5f)*2*2*M_PI;
+      //then use this to rotate on just one axis
+    mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1],radians[2]));
+        //when you implement the other sliders and/or the Arcball, you need to keep track
+        //of the other rotations used for the second and third axis... It will not stay as 0.0f
+    });
+    rotSlider->setTooltip("X");
+
+    Slider *rotSlider2 = new Slider(panelRot);
+    rotSlider2->setValue(0.5f);
+    rotSlider2->setFixedWidth(150);
+    rotSlider2->setCallback([&](float value) {
+    radians[1] = (value - 0.5f)*2*2*M_PI;
+    mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1],radians[2]));
+    });
+    rotSlider2->setTooltip("Y");
+    Slider *rotSlider3 = new Slider(panelRot);
+    rotSlider3->setValue(0.5f);
+    rotSlider3->setFixedWidth(150);
+    rotSlider3->setCallback([&](float value) {
+    radians[2] = (value - 0.5f)*2*2*M_PI;
+    mCanvas->setRotation(Eigen::Vector3f(radians[0], radians[1], radians[2]));
+    });
+    rotSlider3->setTooltip("Z");
+
+    // Translation slots : XYZ (abs)
+    new Label(anotherWindow, "Translation (X, Y, Z)", "sans-bold");
+    Widget *panelRot2 = new Widget(anotherWindow);
+    panelRot2->setLayout(new BoxLayout(Orientation::Vertical,
+                                        Alignment::Middle, 0, 0));
+    Slider *rotSliderX = new Slider(panelRot2);
+    rotSliderX->setValue(0.5f);
+    rotSliderX->setFixedWidth(150);
+    rotSliderX->setCallback([&](float value) {
+      positions[0] = value-0.5;
+      mCanvas->setTranslation(Eigen::Vector3f(positions[0], positions[1], positions[2]));
+    });
+    rotSliderX->setTooltip("X");
+
+    Slider *rotSliderY = new Slider(panelRot2);
+    rotSliderY->setValue(0.5f);
+    rotSliderY->setFixedWidth(150);
+    rotSliderY->setCallback([&](float value) {
+      positions[1] = value-0.5;
+      mCanvas->setTranslation(Eigen::Vector3f(positions[0], positions[1], positions[2]));
+    });
+    rotSliderY->setTooltip("Y");
+
+    Slider *rotSliderZ = new Slider(panelRot2);
+    rotSliderZ->setValue(0.5f);
+    rotSliderZ->setFixedWidth(150);
+    rotSliderZ->setCallback([&](float value) {
+      positions[2] = value-0.5;
+      mCanvas->setTranslation(Eigen::Vector3f(positions[0], positions[1], positions[2]));
+    });
+    rotSliderZ->setTooltip("Z (Not possible to see)");
+
+    new Label(anotherWindow, "Mesh Decimation", "sans-bold");
+    Widget *panel2 = new Widget(anotherWindow);
+    panel2->setLayout(new BoxLayout(Orientation::Horizontal,
+                                    Alignment::Middle, 0, 20));
+    auto intBox = new IntBox<int>(panel2);
+    intBox->setEditable(true);
+    intBox->setFixedSize(Vector2i(80, 25));
+    intBox->setValue(10);
+    // intBox->setUnits("Mhz");
+    intBox->setDefaultValue("0");
+    intBox->setFontSize(16);
+    intBox->setFormat("[1-9][0-9]*");
+    intBox->setSpinnable(true);
+    intBox->setMinValue(1);
+    intBox->setValueIncrement(10);
+    intBox->setCallback([&](int n) {
+      NanoguiMeshApp::n_decimate = n;
+      mCanvas->decimateMesh(NanoguiMeshApp::n_decimate); 
+    });
+    Button *b_decimate = new Button(panel2, "Decimate");
+    b_decimate->setCallback([&] {
+      mCanvas->decimateMesh(NanoguiMeshApp::n_decimate); 
+    });
+    b_decimate->setTooltip("Mesh Decimate with Random K");
+    b_decimate->setFixedSize(Vector2i(100,25));
+    b_decimate->setFontSize(20);
+    //Method to assemble the interface defined before it is called
+    performLayout();
 }
 
 bool NanoguiMeshApp::mouseMotionEvent(const Eigen::Vector2i &p, const Vector2i &rel, int button, int modifiers) {

@@ -31,6 +31,7 @@ public:
 
     void load_obj(string file_path, nanogui::MatrixXf &newPositions, nanogui::MatrixXu &newIndices);
     void save_obj (string file_path, nanogui::MatrixXf &positions, nanogui::MatrixXu &faces);
+
 private:
     nanogui::ProgressBar *mProgress;
     MyGLCanvas *mCanvas;
@@ -39,6 +40,8 @@ private:
     float scales[3] = {1.0f, 1.0f, 1.0f};
     MatrixXf objPositions;
     MatrixXu objIndices;
+    int n_decimate = 0;
+    
 };
 
 

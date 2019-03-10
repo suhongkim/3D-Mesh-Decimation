@@ -20,6 +20,8 @@ using nanogui::MatrixXf;
 using nanogui::Label;
 using nanogui::Arcball;
 
+
+
 MyGLCanvas::MyGLCanvas(Widget *parent) : nanogui::GLCanvas(parent) {
     using namespace nanogui;
 
@@ -42,9 +44,9 @@ MyGLCanvas::MyGLCanvas(Widget *parent) : nanogui::GLCanvas(parent) {
     mShader.uploadAttrib("color", mColors);
     mShader.uploadAttrib("vertexNormal_modelspace", mNormals);
 
-    mTransVec = Eigen::Vector3f(0,0,0);
-    mScaleVec = Eigen::Vector3f(1,1,1);
-    mRotatVec = Eigen::Vector3f(0,0,0);
+    mTransVec = Vector3f(0,0,0);
+    mScaleVec = Vector3f(1,1,1);
+    mRotatVec = Vector3f(0,0,0);
     auto mvp = updateMVP(); 
     mShader.setUniform("MVP", mvp);
 
@@ -79,31 +81,37 @@ void MyGLCanvas::drawGL() {
     glDisable(GL_DEPTH_TEST);
 }
 
-Eigen::Matrix4f MyGLCanvas::updateMVP() {
-    Eigen::Matrix4f translation;
+nanogui::Matrix4f MyGLCanvas::updateMVP() {
+    using namespace nanogui;
+
+    Matrix4f translation;
     translation.setIdentity();
     translation.block(0, 3, 3, 3) = mTransVec;
 
-    Eigen::Matrix4f scaling;
+    Matrix4f scaling;
     scaling.setIdentity();
     scaling.topLeftCorner<3,3>() = mScaleVec.asDiagonal();
 
-    Eigen::Matrix4f rotation;
+    Matrix4f rotation;
     rotation.setIdentity();
-    rotation.topLeftCorner<3,3>() = Eigen::Matrix3f(Eigen::AngleAxisf(mRotatVec[0], Eigen::Vector3f::UnitX()) *
-                                                    Eigen::AngleAxisf(mRotatVec[1], Eigen::Vector3f::UnitY()) *
-                                                    Eigen::AngleAxisf(mRotatVec[2], Eigen::Vector3f::UnitZ())) * 0.25f;
+    rotation.topLeftCorner<3,3>() = Matrix3f(Eigen::AngleAxisf(mRotatVec[0], Eigen::Vector3f::UnitX()) *
+                                             Eigen::AngleAxisf(mRotatVec[1], Eigen::Vector3f::UnitY()) *
+                                             Eigen::AngleAxisf(mRotatVec[2], Eigen::Vector3f::UnitZ())) * 0.25f;
 
     auto mvp = translation * rotation * scaling; 
     return mvp;
 }
 
-void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
-    //< Winged Edge Structure>
-    n_vertex = positions.cols();
-    n_face = indice.cols();
+void MyGLCanvas::updateMeshInfo(int n_v, int n_f) {
+    n_vertex = n_v; 
+    n_face = n_f; 
     n_edge = 3*n_face; //2*(n_vertex + n_face -2); // genus=0  V + F - E/2 = 2 - 2G
+}
 
+
+void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
+
+    //< Winged Edge Structure>
     mVertice = new Vertex[n_vertex]; 
     mFaces = new Face[n_face]; 
     mEdges = new W_edge[n_edge]; 
@@ -192,6 +200,8 @@ void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
 
 
 void MyGLCanvas::updateMeshes() {
+    using namespace nanogui;
+
     // update mPositions, mNormals based on Faces
     mPositions = MatrixXf(3, 3*n_face + n_face*3*2);
     mVNormals  = MatrixXf(3, 3*n_face + n_face*3*2);    // vertex normal for smooth shading
@@ -207,7 +217,7 @@ void MyGLCanvas::updateMeshes() {
         Vertex* v_list[3]  = {f->edge->start, f->edge->end, f->edge->right_next->end};  
 
         for (int i = 0; i < 3; i++) {
-            mPositions.col(f_idx) =  Eigen::Vector3f(v_list[i]->x, v_list[i]->y, v_list[i]->z);
+            mPositions.col(f_idx) =  Vector3f(v_list[i]->x, v_list[i]->y, v_list[i]->z);
             mVNormals.col(f_idx)  = v_list[i]->normal; 
             mFNormals.col(f_idx)  = f->normal;
             mColors.col(f_idx)    = f_color;
@@ -215,40 +225,43 @@ void MyGLCanvas::updateMeshes() {
         }
         
         for (int l = 0; l < 3; l++) {
-            mPositions.col(l_idx) = Eigen::Vector3f(v_list[l]->x, v_list[l]->y, v_list[l]->z) + f->normal*0.002;
+            mPositions.col(l_idx) = Vector3f(v_list[l]->x, v_list[l]->y, v_list[l]->z) + f->normal*0.002;
             mVNormals.col(l_idx)  = v_list[l]->normal; 
             mFNormals.col(l_idx)  = f->normal;
             mColors.col(l_idx)    = l_color;
             l_idx++;
-            mPositions.col(l_idx) = Eigen::Vector3f(v_list[(l+1)%3]->x, v_list[(l+1)%3]->y, v_list[(l+1)%3]->z) + f->normal*0.002;
+            mPositions.col(l_idx) = Vector3f(v_list[(l+1)%3]->x, v_list[(l+1)%3]->y, v_list[(l+1)%3]->z) + f->normal*0.002;
             mVNormals.col(l_idx)  = v_list[(l+1)%3]->normal; 
             mFNormals.col(l_idx)  = f->normal;
             mColors.col(l_idx)    = l_color;
             l_idx++;
         }
     }
+    mNormals = mFNormals; // default : flat shading
 }
 
 void MyGLCanvas::updateNewMesh(MatrixXf &positions, MatrixXu &indice) {
-    
-    // Need to scale meshes into [-1, 1] (Centered)
-    Eigen::Vector3f max = positions.rowwise().maxCoeff();
-    Eigen::Vector3f min = positions.rowwise().minCoeff();
+    using namespace nanogui;
+
+    // 0. Need to scale meshes into [-1, 1] (Centered)
+    Vector3f max = positions.rowwise().maxCoeff();
+    Vector3f min = positions.rowwise().minCoeff();
 
     for (int p = 0; p < positions.cols(); p++) {
         positions.col(p)[0] = 2 * (positions.col(p)[0]-min[0])/(max[0]-min[0]) -1;
         positions.col(p)[1] = 2 * (positions.col(p)[1]-min[1])/(max[1]-min[1]) -1;
         positions.col(p)[2] = 2 * (positions.col(p)[2]-min[2])/(max[2]-min[2]) -1;
     }
-    
-    // Update Winged Edge DataStructure
+
+    // 1. Update number info of Mesh 
+    updateMeshInfo(positions.cols(), indice.cols()); 
+
+    // 2. Update Winged Edge DataStructure
     updateWingEdge(positions, indice);
 
-    // Update Mesh data
+    // 3. Update Mesh data
     updateMeshes(); 
-    mNormals = mFNormals; // default : flat shading
 }
-
 
 void MyGLCanvas::updateMeshForm(unsigned int meshForms){
     switch(meshForms){
@@ -276,5 +289,4 @@ void MyGLCanvas::updateMeshForm(unsigned int meshForms){
             isLineOn = false;
     }   
 }
-
 

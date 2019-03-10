@@ -144,17 +144,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named obj_view
+# Target rules for targets named mcaq
 
 # Build rule for target.
-obj_view: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 obj_view
-.PHONY : obj_view
+mcaq: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mcaq
+.PHONY : mcaq
 
 # fast build rule for target.
-obj_view/fast:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/build
-.PHONY : obj_view/fast
+mcaq/fast:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/build
+.PHONY : mcaq/fast
 
 #=============================================================================
 # Target rules for targets named example2
@@ -322,13 +322,40 @@ embed-resource/fast:
 	$(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/build
 .PHONY : embed-resource/fast
 
+MeshDecimation.o: MeshDecimation.cpp.o
+
+.PHONY : MeshDecimation.o
+
+# target to build an object file
+MeshDecimation.cpp.o:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/MeshDecimation.cpp.o
+.PHONY : MeshDecimation.cpp.o
+
+MeshDecimation.i: MeshDecimation.cpp.i
+
+.PHONY : MeshDecimation.i
+
+# target to preprocess a source file
+MeshDecimation.cpp.i:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/MeshDecimation.cpp.i
+.PHONY : MeshDecimation.cpp.i
+
+MeshDecimation.s: MeshDecimation.cpp.s
+
+.PHONY : MeshDecimation.s
+
+# target to generate assembly for a file
+MeshDecimation.cpp.s:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/MeshDecimation.cpp.s
+.PHONY : MeshDecimation.cpp.s
+
 MyGlCanvas_a2.o: MyGlCanvas_a2.cpp.o
 
 .PHONY : MyGlCanvas_a2.o
 
 # target to build an object file
 MyGlCanvas_a2.cpp.o:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.o
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/MyGlCanvas_a2.cpp.o
 .PHONY : MyGlCanvas_a2.cpp.o
 
 MyGlCanvas_a2.i: MyGlCanvas_a2.cpp.i
@@ -337,7 +364,7 @@ MyGlCanvas_a2.i: MyGlCanvas_a2.cpp.i
 
 # target to preprocess a source file
 MyGlCanvas_a2.cpp.i:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.i
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/MyGlCanvas_a2.cpp.i
 .PHONY : MyGlCanvas_a2.cpp.i
 
 MyGlCanvas_a2.s: MyGlCanvas_a2.cpp.s
@@ -346,7 +373,7 @@ MyGlCanvas_a2.s: MyGlCanvas_a2.cpp.s
 
 # target to generate assembly for a file
 MyGlCanvas_a2.cpp.s:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.s
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/MyGlCanvas_a2.cpp.s
 .PHONY : MyGlCanvas_a2.cpp.s
 
 NanoguiMeshApp.o: NanoguiMeshApp.cpp.o
@@ -355,7 +382,7 @@ NanoguiMeshApp.o: NanoguiMeshApp.cpp.o
 
 # target to build an object file
 NanoguiMeshApp.cpp.o:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/NanoguiMeshApp.cpp.o
 .PHONY : NanoguiMeshApp.cpp.o
 
 NanoguiMeshApp.i: NanoguiMeshApp.cpp.i
@@ -364,7 +391,7 @@ NanoguiMeshApp.i: NanoguiMeshApp.cpp.i
 
 # target to preprocess a source file
 NanoguiMeshApp.cpp.i:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.i
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/NanoguiMeshApp.cpp.i
 .PHONY : NanoguiMeshApp.cpp.i
 
 NanoguiMeshApp.s: NanoguiMeshApp.cpp.s
@@ -373,35 +400,35 @@ NanoguiMeshApp.s: NanoguiMeshApp.cpp.s
 
 # target to generate assembly for a file
 NanoguiMeshApp.cpp.s:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.s
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/NanoguiMeshApp.cpp.s
 .PHONY : NanoguiMeshApp.cpp.s
 
-obj_view.o: obj_view.cpp.o
+main.o: main.cpp.o
 
-.PHONY : obj_view.o
+.PHONY : main.o
 
 # target to build an object file
-obj_view.cpp.o:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/obj_view.cpp.o
-.PHONY : obj_view.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-obj_view.i: obj_view.cpp.i
+main.i: main.cpp.i
 
-.PHONY : obj_view.i
+.PHONY : main.i
 
 # target to preprocess a source file
-obj_view.cpp.i:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/obj_view.cpp.i
-.PHONY : obj_view.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-obj_view.s: obj_view.cpp.s
+main.s: main.cpp.s
 
-.PHONY : obj_view.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-obj_view.cpp.s:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/obj_view.cpp.s
-.PHONY : obj_view.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 shader/frag.glsl.o: shader/frag.glsl.c.o
 
@@ -409,7 +436,7 @@ shader/frag.glsl.o: shader/frag.glsl.c.o
 
 # target to build an object file
 shader/frag.glsl.c.o:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/shader/frag.glsl.c.o
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/shader/frag.glsl.c.o
 .PHONY : shader/frag.glsl.c.o
 
 shader/frag.glsl.i: shader/frag.glsl.c.i
@@ -418,7 +445,7 @@ shader/frag.glsl.i: shader/frag.glsl.c.i
 
 # target to preprocess a source file
 shader/frag.glsl.c.i:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/shader/frag.glsl.c.i
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/shader/frag.glsl.c.i
 .PHONY : shader/frag.glsl.c.i
 
 shader/frag.glsl.s: shader/frag.glsl.c.s
@@ -427,7 +454,7 @@ shader/frag.glsl.s: shader/frag.glsl.c.s
 
 # target to generate assembly for a file
 shader/frag.glsl.c.s:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/shader/frag.glsl.c.s
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/shader/frag.glsl.c.s
 .PHONY : shader/frag.glsl.c.s
 
 shader/vert.glsl.o: shader/vert.glsl.c.o
@@ -436,7 +463,7 @@ shader/vert.glsl.o: shader/vert.glsl.c.o
 
 # target to build an object file
 shader/vert.glsl.c.o:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/shader/vert.glsl.c.o
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/shader/vert.glsl.c.o
 .PHONY : shader/vert.glsl.c.o
 
 shader/vert.glsl.i: shader/vert.glsl.c.i
@@ -445,7 +472,7 @@ shader/vert.glsl.i: shader/vert.glsl.c.i
 
 # target to preprocess a source file
 shader/vert.glsl.c.i:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/shader/vert.glsl.c.i
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/shader/vert.glsl.c.i
 .PHONY : shader/vert.glsl.c.i
 
 shader/vert.glsl.s: shader/vert.glsl.c.s
@@ -454,7 +481,7 @@ shader/vert.glsl.s: shader/vert.glsl.c.s
 
 # target to generate assembly for a file
 shader/vert.glsl.c.s:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/shader/vert.glsl.c.s
+	$(MAKE) -f CMakeFiles/mcaq.dir/build.make CMakeFiles/mcaq.dir/shader/vert.glsl.c.s
 .PHONY : shader/vert.glsl.c.s
 
 # Help Target
@@ -465,7 +492,7 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... obj_view"
+	@echo "... mcaq"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
@@ -481,15 +508,18 @@ help:
 	@echo "... glfw_objects"
 	@echo "... glfw"
 	@echo "... embed-resource"
+	@echo "... MeshDecimation.o"
+	@echo "... MeshDecimation.i"
+	@echo "... MeshDecimation.s"
 	@echo "... MyGlCanvas_a2.o"
 	@echo "... MyGlCanvas_a2.i"
 	@echo "... MyGlCanvas_a2.s"
 	@echo "... NanoguiMeshApp.o"
 	@echo "... NanoguiMeshApp.i"
 	@echo "... NanoguiMeshApp.s"
-	@echo "... obj_view.o"
-	@echo "... obj_view.i"
-	@echo "... obj_view.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... shader/frag.glsl.o"
 	@echo "... shader/frag.glsl.i"
 	@echo "... shader/frag.glsl.s"

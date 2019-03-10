@@ -27,6 +27,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <ctime>
+#include <limits>
 
 // Includes for the GLTexture class.
 #include <cstdint>
@@ -52,18 +54,18 @@ using nanogui::MatrixXu;
 using nanogui::MatrixXf;
 using nanogui::Label;
 using nanogui::Arcball;
-
+ 
 
 // Modified winged Edge
 struct W_edge; 
 struct Vertex {
   float x, y, z;
-  Eigen::Vector3f normal;
+  nanogui::Vector3f normal;
   W_edge *edge;
 };
 
 struct Face {
-  Eigen::Vector3f normal;
+  nanogui::Vector3f normal;
   W_edge *edge;
 
 };
@@ -98,17 +100,19 @@ public:
     ~MyGLCanvas() {
       mShader.free();
     }
-    void setTranslation(Eigen::Vector3f transVec) {
+    void setTranslation(nanogui::Vector3f transVec) {
         mTransVec = transVec;
     }
-    void setScaling(Eigen::Vector3f scaleVec) {
+    void setScaling(nanogui::Vector3f scaleVec) {
         mScaleVec = scaleVec;
     }
-    void setRotation(Eigen::Vector3f rotateVec) {
+    void setRotation(nanogui::Vector3f rotateVec) {
         mRotatVec = rotateVec; // radians
     }
 
-    Eigen::Matrix4f updateMVP();
+    nanogui::Matrix4f updateMVP();
+
+    void updateMeshInfo(int n_v, int n_f);
 
     void updateWingEdge(MatrixXf &positions, MatrixXu &indice);
 
@@ -120,10 +124,12 @@ public:
 
     void updateMeshColors(MatrixXf newColors){
         mColors = newColors;
-    
-    void updateQuadrics(MatrixXf &positions, MatrixXu &indices);
     }
 
+    //Mutiple Choice Decimation based on Quadric 
+    void decimateMesh(int n_decimate); 
+    nanogui::Matrix4f calcVertexQuadric(Vertex * v); 
+    
     //OpenGL calls this method constantly to update the screen.
     virtual void drawGL() override; 
 
@@ -141,15 +147,18 @@ private:
     MatrixXf mFNormals;
     MatrixXf mColors;
     nanogui::GLShader mShader;
-    Eigen::Vector3f mTransVec;
-    Eigen::Vector3f mScaleVec;
-    Eigen::Vector3f mRotatVec;
+    nanogui::Vector3f mTransVec;
+    nanogui::Vector3f mScaleVec;
+    nanogui::Vector3f mRotatVec;
     int n_face;
     int n_vertex;
     int n_edge;
     bool isFaceOn = true;
     bool isLineOn = false;
     enum MeshForms {Flat_Shaded, Smooth_Shaded, Wireform, Shaded_with_Wire};
+    // decimation
+    int randomK = 5; 
+
 };
 
 #endif

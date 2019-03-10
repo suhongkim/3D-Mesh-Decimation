@@ -1,6 +1,6 @@
 /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/install.dir
 /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/list_install_components.dir
-/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/obj_view.dir
+/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/mcaq.dir
 /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/install/local.dir
 /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/rebuild_cache.dir
 /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/edit_cache.dir
