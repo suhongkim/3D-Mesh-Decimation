@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.cpp
-MyGlCanvas.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/MyGlCanvas_a2.cpp
+MyGlCanvas_a2.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/MyGlCanvas_a2.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/NanoguiMeshApp.cpp
 nanogui/nanogui.h
 -
 NanoguiMeshApp.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/NanoguiMeshApp.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/obj_view.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/obj_view.cpp
 NanoguiMeshApp.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/NanoguiMeshApp.h
 stb_image.h
 -
 windows.h
@@ -1304,7 +1304,7 @@ lib/nanogui/include/nanogui/window.h
 nanogui/widget.h
 -
 
-src/MyGlCanvas.h
+src/MyGlCanvas_a2.h
 nanogui/opengl.h
 -
 nanogui/glutil.h
@@ -1367,6 +1367,6 @@ utility
 src/NanoguiMeshApp.h
 nanogui/nanogui.h
 -
-MyGlCanvas.h
-src/MyGlCanvas.h
+MyGlCanvas_a2.h
+src/MyGlCanvas_a2.h
 

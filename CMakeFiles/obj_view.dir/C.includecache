@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/shader/frag.glsl.c
+/home/suhongk/Documents/CMPT764_CG/assignment2/shader/frag.glsl.c
 stdlib.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/shader/vert.glsl.c
+/home/suhongk/Documents/CMPT764_CG/assignment2/shader/vert.glsl.c
 stdlib.h
 -
 

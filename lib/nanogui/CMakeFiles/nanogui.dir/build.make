@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # Include any dependencies generated for this target.
 include lib/nanogui/CMakeFiles/nanogui.dir/depend.make
@@ -62,51 +62,51 @@ nanogui_OBJECTS =
 
 # External object files for target nanogui
 nanogui_EXTERNAL_OBJECTS = \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
 
 lib/nanogui/libnanogui.so: lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
 lib/nanogui/libnanogui.so: lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o
@@ -155,9 +155,9 @@ lib/nanogui/libnanogui.so: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_object
 lib/nanogui/libnanogui.so: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o
 lib/nanogui/libnanogui.so: lib/nanogui/CMakeFiles/nanogui.dir/build.make
 lib/nanogui/libnanogui.so: lib/nanogui/CMakeFiles/nanogui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.so"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && strip /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/libnanogui.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.so"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && strip /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/libnanogui.so
 
 # Rule to build all files generated by this target.
 lib/nanogui/CMakeFiles/nanogui.dir/build: lib/nanogui/libnanogui.so
@@ -169,51 +169,51 @@ nanogui_OBJECTS =
 
 # External object files for target nanogui
 nanogui_EXTERNAL_OBJECTS = \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
 
 lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so: lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
 lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so: lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o
@@ -262,8 +262,8 @@ lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so: lib/nanogui/ext_build/glfw
 lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o
 lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so: lib/nanogui/CMakeFiles/nanogui.dir/build.make
 lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so: lib/nanogui/CMakeFiles/nanogui.dir/relink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library CMakeFiles/CMakeRelink.dir/libnanogui.so"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/relink.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library CMakeFiles/CMakeRelink.dir/libnanogui.so"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/relink.txt --verbose=$(VERBOSE)
 
 # Rule to relink during preinstall.
 lib/nanogui/CMakeFiles/nanogui.dir/preinstall: lib/nanogui/CMakeFiles/CMakeRelink.dir/libnanogui.so
@@ -275,10 +275,10 @@ lib/nanogui/CMakeFiles/nanogui.dir/requires:
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/requires
 
 lib/nanogui/CMakeFiles/nanogui.dir/clean:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/clean
 
 lib/nanogui/CMakeFiles/nanogui.dir/depend:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/depend
 

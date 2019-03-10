@@ -6,45 +6,45 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/basics.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/basics.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/button.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/button.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_entypo.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_entypo.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_glfw.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_glfw.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/eigen.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/eigen.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/formhelper.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/formhelper.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glcanvas.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glcanvas.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glutil.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glutil.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 pybind11/numpy.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/layout.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/layout.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/main.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/main.cpp
 thread
 -
 mutex
@@ -52,23 +52,23 @@ mutex
 condition_variable
 -
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 coro.h
 -
 signal.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/misc.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/misc.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/nanovg.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/nanovg.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/py_doc.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/py_doc.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 nanogui/nanogui.h
 -
 nanogui/opengl.h
@@ -84,19 +84,19 @@ pybind11/functional.h
 nanogui/python.h
 -
 py_doc.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/py_doc.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/py_doc.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/tabs.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/tabs.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/textbox.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/textbox.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/widget.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/widget.cpp
 python.h
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/python.h
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/python.h
 
 /home/suhongk/anaconda3/include/python3.7m/Python.h
 patchlevel.h

@@ -54,20 +54,20 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 #=============================================================================
 # Target rules for target CMakeFiles/obj_view.dir
 
 # All Build rule for target.
-CMakeFiles/obj_view.dir/all: lib/embed-resource/CMakeFiles/embed-resource.dir/all
 CMakeFiles/obj_view.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
+CMakeFiles/obj_view.dir/all: lib/embed-resource/CMakeFiles/embed-resource.dir/all
 	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/depend
 	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=80,81,82,83,84,85,86,87 "Built target obj_view"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=80,81,82,83,84,85,86,87 "Built target obj_view"
 .PHONY : CMakeFiles/obj_view.dir/all
 
 # Include target in all.
@@ -77,9 +77,9 @@ all: CMakeFiles/obj_view.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/obj_view.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 58
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/obj_view.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : CMakeFiles/obj_view.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ lib/nanogui/preinstall: lib/nanogui/ext_build/glfw/preinstall
 lib/nanogui/CMakeFiles/example2.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/example2.dir/build.make lib/nanogui/CMakeFiles/example2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=5,6 "Built target example2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=5,6 "Built target example2"
 .PHONY : lib/nanogui/CMakeFiles/example2.dir/all
 
 # Include target in all.
@@ -152,9 +152,9 @@ all: lib/nanogui/CMakeFiles/example2.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example2.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ clean: lib/nanogui/CMakeFiles/example2.dir/clean
 lib/nanogui/CMakeFiles/example1.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/example1.dir/build.make lib/nanogui/CMakeFiles/example1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=3,4 "Built target example1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=3,4 "Built target example1"
 .PHONY : lib/nanogui/CMakeFiles/example1.dir/all
 
 # Include target in all.
@@ -189,9 +189,9 @@ all: lib/nanogui/CMakeFiles/example1.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example1.dir/rule
 
 # Convenience name for target.
@@ -216,7 +216,7 @@ clean: lib/nanogui/CMakeFiles/example1.dir/clean
 lib/nanogui/CMakeFiles/nanogui-obj.dir/all:
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-obj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target nanogui-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61 "Built target nanogui-obj"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/all
 
 # Include target in all.
@@ -226,9 +226,9 @@ all: lib/nanogui/CMakeFiles/nanogui-obj.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui-obj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-obj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/rule
 
 # Convenience name for target.
@@ -253,7 +253,7 @@ clean: lib/nanogui/CMakeFiles/nanogui-obj.dir/clean
 lib/nanogui/CMakeFiles/example3.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/example3.dir/build.make lib/nanogui/CMakeFiles/example3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=7,8 "Built target example3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=7,8 "Built target example3"
 .PHONY : lib/nanogui/CMakeFiles/example3.dir/all
 
 # Include target in all.
@@ -263,9 +263,9 @@ all: lib/nanogui/CMakeFiles/example3.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example3.dir/rule
 
 # Convenience name for target.
@@ -291,7 +291,7 @@ lib/nanogui/CMakeFiles/nanogui.dir/all: lib/nanogui/CMakeFiles/nanogui-obj.dir/a
 lib/nanogui/CMakeFiles/nanogui.dir/all: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui.dir/build.make lib/nanogui/CMakeFiles/nanogui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=29,30 "Built target nanogui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=29,30 "Built target nanogui"
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/all
 
 # Include target in all.
@@ -301,9 +301,9 @@ all: lib/nanogui/CMakeFiles/nanogui.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui.dir/rule
 
 # Convenience name for target.
@@ -338,7 +338,7 @@ clean: lib/nanogui/CMakeFiles/nanogui.dir/clean
 lib/nanogui/CMakeFiles/example_icons.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/example_icons.dir/build.make lib/nanogui/CMakeFiles/example_icons.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=11,12 "Built target example_icons"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=11,12 "Built target example_icons"
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/all
 
 # Include target in all.
@@ -348,9 +348,9 @@ all: lib/nanogui/CMakeFiles/example_icons.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example_icons.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example_icons.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example_icons.dir/rule
 
 # Convenience name for target.
@@ -375,7 +375,7 @@ clean: lib/nanogui/CMakeFiles/example_icons.dir/clean
 lib/nanogui/CMakeFiles/example4.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/example4.dir/build.make lib/nanogui/CMakeFiles/example4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=9,10 "Built target example4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=9,10 "Built target example4"
 .PHONY : lib/nanogui/CMakeFiles/example4.dir/all
 
 # Include target in all.
@@ -385,9 +385,9 @@ all: lib/nanogui/CMakeFiles/example4.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/example4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/example4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/example4.dir/rule
 
 # Convenience name for target.
@@ -409,11 +409,11 @@ clean: lib/nanogui/CMakeFiles/example4.dir/clean
 # Target rules for target lib/nanogui/CMakeFiles/nanogui-python.dir
 
 # All Build rule for target.
-lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
 lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui.dir/all
+lib/nanogui/CMakeFiles/nanogui-python.dir/all: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui-python.dir/build.make lib/nanogui/CMakeFiles/nanogui-python.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=62,63 "Built target nanogui-python"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=62,63 "Built target nanogui-python"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/all
 
 # Include target in all.
@@ -423,9 +423,9 @@ all: lib/nanogui/CMakeFiles/nanogui-python.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui-python.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 66
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python.dir/rule
 
 # Convenience name for target.
@@ -460,7 +460,7 @@ clean: lib/nanogui/CMakeFiles/nanogui-python.dir/clean
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all:
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/depend
 	$(MAKE) -f lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build.make lib/nanogui/CMakeFiles/nanogui-python-obj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target nanogui-python-obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target nanogui-python-obj"
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
 
 # Include target in all.
@@ -470,9 +470,9 @@ all: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/rule
 
 # Convenience name for target.
@@ -534,7 +534,7 @@ lib/nanogui/ext_build/glfw/src/preinstall:
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all:
 	$(MAKE) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend
 	$(MAKE) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target glfw_objects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target glfw_objects"
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
 
 # Include target in all.
@@ -544,9 +544,9 @@ all: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/rule
 
 # Convenience name for target.
@@ -571,14 +571,14 @@ clean: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/clean
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/all: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/all
 	$(MAKE) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=13 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=13 "Built target glfw"
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.
@@ -621,7 +621,7 @@ lib/embed-resource/preinstall:
 lib/embed-resource/CMakeFiles/embed-resource.dir/all:
 	$(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/depend
 	$(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=1,2 "Built target embed-resource"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=1,2 "Built target embed-resource"
 .PHONY : lib/embed-resource/CMakeFiles/embed-resource.dir/all
 
 # Include target in all.
@@ -631,9 +631,9 @@ all: lib/embed-resource/CMakeFiles/embed-resource.dir/all
 
 # Build rule for subdir invocation for target.
 lib/embed-resource/CMakeFiles/embed-resource.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/CMakeFiles/embed-resource.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : lib/embed-resource/CMakeFiles/embed-resource.dir/rule
 
 # Convenience name for target.

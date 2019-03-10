@@ -3,7 +3,7 @@
 
 
 #include <nanogui/nanogui.h>
-#include "MyGlCanvas.h"
+#include "MyGlCanvas_a2.h"
 
 using namespace nanogui; 
 using namespace std;  

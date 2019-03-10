@@ -52,7 +52,6 @@ MyGLCanvas::MyGLCanvas(Widget *parent) : nanogui::GLCanvas(parent) {
 	    M.setIdentity();
 	    mShader.setUniform("M", M);
 
-	
         mShader.uploadAttrib("vertexPosition_modelspace", mPositions);
         mShader.uploadAttrib("color", mColors);
 	    mShader.uploadAttrib("vertexNormal_modelspace", mNormals);
@@ -111,7 +110,7 @@ Eigen::Matrix4f MyGLCanvas::updateMVP() {
 
   auto mvp = translation * rotation * scaling; 
   return mvp;
-  //return scaling*translation * rotation ;
+  
 }
 
 void MyGLCanvas::updateNewMesh(MatrixXf &positions, MatrixXu &indices) {

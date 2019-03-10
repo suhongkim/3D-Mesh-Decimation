@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/shader/frag.glsl.c" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/shader/frag.glsl.c.o"
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/shader/vert.glsl.c" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/shader/vert.glsl.c.o"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/shader/frag.glsl.c" "/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/obj_view.dir/shader/frag.glsl.c.o"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/shader/vert.glsl.c" "/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/obj_view.dir/shader/vert.glsl.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -28,9 +28,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "src"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/MyGlCanvas.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o"
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/NanoguiMeshApp.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o"
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/obj_view.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/obj_view.dir/obj_view.cpp.o"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/MyGlCanvas_a2.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.o"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/NanoguiMeshApp.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/obj_view.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/obj_view.dir/obj_view.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -54,7 +54,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

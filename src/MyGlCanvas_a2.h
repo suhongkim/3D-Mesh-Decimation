@@ -1,19 +1,6 @@
 #ifndef MYGLCANVAS_H
 #define MYGLCANVAS_H
 
-/*
-    Sample code by Wallace Lira <http://www.sfu.ca/~wpintoli/> based on
-    the four Nanogui examples and also on the sample code provided in
-          https://github.com/darrenmothersele/nanogui-test
-
-    All rights reserved. Use of this source code is governed by a
-    BSD-style license that can be found in the LICENSE.txt file.
-*/
-
-// quit exit(1);
-// change color
-// save......ooooooo
-
 #include <nanogui/opengl.h>
 #include <nanogui/glutil.h>
 #include <nanogui/screen.h>
@@ -67,15 +54,20 @@ using nanogui::Label;
 using nanogui::Arcball;
 
 
-// winged Edge
+// Modified winged Edge
 struct W_edge; 
 struct Vertex {
   float x, y, z;
+  Eigen::Vector3f normal;
   W_edge *edge;
 };
+
 struct Face {
+  Eigen::Vector3f normal;
   W_edge *edge;
+
 };
+
 struct W_edge {
   Vertex *start, *end;
   Face *left, *right;
@@ -118,12 +110,18 @@ public:
 
     Eigen::Matrix4f updateMVP();
 
+    void updateWingEdge(MatrixXf &positions, MatrixXu &indice);
+
+    void updateMeshes(); 
+
     void updateNewMesh(MatrixXf &positions, MatrixXu &indices);
 
     void updateMeshForm(unsigned int meshForms);
 
     void updateMeshColors(MatrixXf newColors){
         mColors = newColors;
+    
+    void updateQuadrics(MatrixXf &positions, MatrixXu &indices);
     }
 
     //OpenGL calls this method constantly to update the screen.
@@ -132,6 +130,11 @@ public:
 //Instantiation of the variables that can be acessed outside of this class to interact with the interface
 //Need to be updated if a interface element is interacting with something that is inside the scope of MyGLCanvas
 private:
+    //for Winged Edge
+    Vertex  *mVertice;
+    Face    *mFaces;
+    W_edge  *mEdges; // winged edge has two directions
+    // for shader
     MatrixXf mPositions;
     MatrixXf mNormals;
     MatrixXf mVNormals;
@@ -141,7 +144,9 @@ private:
     Eigen::Vector3f mTransVec;
     Eigen::Vector3f mScaleVec;
     Eigen::Vector3f mRotatVec;
-    int mTriangles = 12;
+    int n_face;
+    int n_vertex;
+    int n_edge;
     bool isFaceOn = true;
     bool isLineOn = false;
     enum MeshForms {Flat_Shaded, Smooth_Shaded, Wireform, Shaded_with_Wire};

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # Include any dependencies generated for this target.
 include lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend.make
@@ -59,16 +59,16 @@ include lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o: lib/nanogui/ext/glfw/src/context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/context.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/context.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/context.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/context.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/context.c > CMakeFiles/glfw_objects.dir/context.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/context.c > CMakeFiles/glfw_objects.dir/context.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/context.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/context.c -o CMakeFiles/glfw_objects.dir/context.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/context.c -o CMakeFiles/glfw_objects.dir/context.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o.requires:
 
@@ -83,16 +83,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o.provides.
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o: lib/nanogui/ext/glfw/src/init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/init.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/init.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/init.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/init.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/init.c > CMakeFiles/glfw_objects.dir/init.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/init.c > CMakeFiles/glfw_objects.dir/init.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/init.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/init.c -o CMakeFiles/glfw_objects.dir/init.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/init.c -o CMakeFiles/glfw_objects.dir/init.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o.requires:
 
@@ -107,16 +107,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o.provides.bui
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o: lib/nanogui/ext/glfw/src/input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/input.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/input.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/input.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/input.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/input.c > CMakeFiles/glfw_objects.dir/input.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/input.c > CMakeFiles/glfw_objects.dir/input.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/input.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/input.c -o CMakeFiles/glfw_objects.dir/input.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/input.c -o CMakeFiles/glfw_objects.dir/input.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o.requires:
 
@@ -131,16 +131,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o.provides.bu
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o: lib/nanogui/ext/glfw/src/monitor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/monitor.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/monitor.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/monitor.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/monitor.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/monitor.c > CMakeFiles/glfw_objects.dir/monitor.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/monitor.c > CMakeFiles/glfw_objects.dir/monitor.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/monitor.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/monitor.c -o CMakeFiles/glfw_objects.dir/monitor.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/monitor.c -o CMakeFiles/glfw_objects.dir/monitor.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o.requires:
 
@@ -155,16 +155,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o.provides.
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o: lib/nanogui/ext/glfw/src/vulkan.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/vulkan.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/vulkan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/vulkan.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/vulkan.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/vulkan.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/vulkan.c > CMakeFiles/glfw_objects.dir/vulkan.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/vulkan.c > CMakeFiles/glfw_objects.dir/vulkan.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/vulkan.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/vulkan.c -o CMakeFiles/glfw_objects.dir/vulkan.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/vulkan.c -o CMakeFiles/glfw_objects.dir/vulkan.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o.requires:
 
@@ -179,16 +179,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o.provides.b
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o: lib/nanogui/ext/glfw/src/window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/window.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/window.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/window.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/window.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/window.c > CMakeFiles/glfw_objects.dir/window.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/window.c > CMakeFiles/glfw_objects.dir/window.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/window.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/window.c -o CMakeFiles/glfw_objects.dir/window.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/window.c -o CMakeFiles/glfw_objects.dir/window.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o.requires:
 
@@ -203,16 +203,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o.provides.b
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o: lib/nanogui/ext/glfw/src/x11_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/x11_init.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/x11_init.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_init.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/x11_init.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_init.c > CMakeFiles/glfw_objects.dir/x11_init.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_init.c > CMakeFiles/glfw_objects.dir/x11_init.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/x11_init.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_init.c -o CMakeFiles/glfw_objects.dir/x11_init.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_init.c -o CMakeFiles/glfw_objects.dir/x11_init.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o.requires:
 
@@ -227,16 +227,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o.provides
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o: lib/nanogui/ext/glfw/src/x11_monitor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/x11_monitor.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_monitor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/x11_monitor.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_monitor.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/x11_monitor.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_monitor.c > CMakeFiles/glfw_objects.dir/x11_monitor.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_monitor.c > CMakeFiles/glfw_objects.dir/x11_monitor.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/x11_monitor.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_monitor.c -o CMakeFiles/glfw_objects.dir/x11_monitor.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_monitor.c -o CMakeFiles/glfw_objects.dir/x11_monitor.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o.requires:
 
@@ -251,16 +251,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o.provi
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o: lib/nanogui/ext/glfw/src/x11_window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/x11_window.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/x11_window.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_window.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/x11_window.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_window.c > CMakeFiles/glfw_objects.dir/x11_window.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_window.c > CMakeFiles/glfw_objects.dir/x11_window.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/x11_window.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/x11_window.c -o CMakeFiles/glfw_objects.dir/x11_window.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/x11_window.c -o CMakeFiles/glfw_objects.dir/x11_window.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o.requires:
 
@@ -275,16 +275,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o.provid
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o: lib/nanogui/ext/glfw/src/xkb_unicode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/xkb_unicode.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/xkb_unicode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/xkb_unicode.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/xkb_unicode.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/xkb_unicode.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/xkb_unicode.c > CMakeFiles/glfw_objects.dir/xkb_unicode.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/xkb_unicode.c > CMakeFiles/glfw_objects.dir/xkb_unicode.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/xkb_unicode.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/xkb_unicode.c -o CMakeFiles/glfw_objects.dir/xkb_unicode.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/xkb_unicode.c -o CMakeFiles/glfw_objects.dir/xkb_unicode.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o.requires:
 
@@ -299,16 +299,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o.provi
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o: lib/nanogui/ext/glfw/src/linux_joystick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/linux_joystick.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/linux_joystick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/linux_joystick.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/linux_joystick.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/linux_joystick.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/linux_joystick.c > CMakeFiles/glfw_objects.dir/linux_joystick.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/linux_joystick.c > CMakeFiles/glfw_objects.dir/linux_joystick.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/linux_joystick.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/linux_joystick.c -o CMakeFiles/glfw_objects.dir/linux_joystick.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/linux_joystick.c -o CMakeFiles/glfw_objects.dir/linux_joystick.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o.requires:
 
@@ -323,16 +323,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o.pr
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o: lib/nanogui/ext/glfw/src/posix_time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/posix_time.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/posix_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/posix_time.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/posix_time.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/posix_time.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/posix_time.c > CMakeFiles/glfw_objects.dir/posix_time.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/posix_time.c > CMakeFiles/glfw_objects.dir/posix_time.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/posix_time.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/posix_time.c -o CMakeFiles/glfw_objects.dir/posix_time.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/posix_time.c -o CMakeFiles/glfw_objects.dir/posix_time.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o.requires:
 
@@ -347,16 +347,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o.provid
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o: lib/nanogui/ext/glfw/src/posix_tls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/posix_tls.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/posix_tls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/posix_tls.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/posix_tls.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/posix_tls.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/posix_tls.c > CMakeFiles/glfw_objects.dir/posix_tls.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/posix_tls.c > CMakeFiles/glfw_objects.dir/posix_tls.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/posix_tls.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/posix_tls.c -o CMakeFiles/glfw_objects.dir/posix_tls.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/posix_tls.c -o CMakeFiles/glfw_objects.dir/posix_tls.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o.requires:
 
@@ -371,16 +371,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o.provide
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o: lib/nanogui/ext/glfw/src/glx_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/glx_context.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/glx_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/glx_context.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/glx_context.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/glx_context.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/glx_context.c > CMakeFiles/glfw_objects.dir/glx_context.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/glx_context.c > CMakeFiles/glfw_objects.dir/glx_context.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/glx_context.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/glx_context.c -o CMakeFiles/glfw_objects.dir/glx_context.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/glx_context.c -o CMakeFiles/glfw_objects.dir/glx_context.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o.requires:
 
@@ -395,16 +395,16 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o.provi
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/flags.make
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o: lib/nanogui/ext/glfw/src/egl_context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/egl_context.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/egl_context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/glfw_objects.dir/egl_context.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/egl_context.c
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/glfw_objects.dir/egl_context.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/egl_context.c > CMakeFiles/glfw_objects.dir/egl_context.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/egl_context.c > CMakeFiles/glfw_objects.dir/egl_context.c.i
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/glfw_objects.dir/egl_context.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src/egl_context.c -o CMakeFiles/glfw_objects.dir/egl_context.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src/egl_context.c -o CMakeFiles/glfw_objects.dir/egl_context.c.s
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o.requires:
 
@@ -460,10 +460,10 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/requires: lib/nanogui
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/requires
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/clean:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw_objects.dir/cmake_clean.cmake
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw_objects.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/clean
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/depend
 

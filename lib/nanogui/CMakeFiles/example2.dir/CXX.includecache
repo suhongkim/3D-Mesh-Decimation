@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/example2.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/example2.cpp
 nanogui/nanogui.h
 -
 iostream

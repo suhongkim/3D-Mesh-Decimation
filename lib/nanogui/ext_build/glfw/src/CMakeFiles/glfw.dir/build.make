@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # Include any dependencies generated for this target.
 include lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend.make
@@ -62,21 +62,21 @@ glfw_OBJECTS =
 
 # External object files for target glfw
 glfw_EXTERNAL_OBJECTS = \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o" \
-"/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_init.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_monitor.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/x11_window.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/xkb_unicode.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/linux_joystick.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_time.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/glx_context.c.o" \
+"/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/egl_context.c.o"
 
 lib/nanogui/ext_build/glfw/src/libglfw.so.3.2: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o
 lib/nanogui/ext_build/glfw/src/libglfw.so.3.2: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o
@@ -102,9 +102,9 @@ lib/nanogui/ext_build/glfw/src/libglfw.so.3.2: /usr/lib/x86_64-linux-gnu/libXine
 lib/nanogui/ext_build/glfw/src/libglfw.so.3.2: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 lib/nanogui/ext_build/glfw/src/libglfw.so.3.2: /usr/lib/x86_64-linux-gnu/libXcursor.so
 lib/nanogui/ext_build/glfw/src/libglfw.so.3.2: lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libglfw.so"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_symlink_library libglfw.so.3.2 libglfw.so.3 libglfw.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libglfw.so"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_symlink_library libglfw.so.3.2 libglfw.so.3 libglfw.so
 
 lib/nanogui/ext_build/glfw/src/libglfw.so.3: lib/nanogui/ext_build/glfw/src/libglfw.so.3.2
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/nanogui/ext_build/glfw/src/libglfw.so.3
@@ -122,10 +122,10 @@ lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/requires:
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/requires
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean
 
 lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend
 

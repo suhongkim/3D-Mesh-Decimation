@@ -8,7 +8,6 @@
 */
 
 
-// #include "MyGlCanvas.h"
 #include "NanoguiMeshApp.h"
 
 #if defined(__GNUC__)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/suhongk/Documents/CMPT764_GM/assignment2/lib/embed-resource
+# Install script for directory: /home/suhongk/Documents/CMPT764_CG/assignment2/lib/embed-resource
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

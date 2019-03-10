@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,9 +113,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -322,32 +322,32 @@ embed-resource/fast:
 	$(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/build
 .PHONY : embed-resource/fast
 
-MyGlCanvas.o: MyGlCanvas.cpp.o
+MyGlCanvas_a2.o: MyGlCanvas_a2.cpp.o
 
-.PHONY : MyGlCanvas.o
+.PHONY : MyGlCanvas_a2.o
 
 # target to build an object file
-MyGlCanvas.cpp.o:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o
-.PHONY : MyGlCanvas.cpp.o
+MyGlCanvas_a2.cpp.o:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.o
+.PHONY : MyGlCanvas_a2.cpp.o
 
-MyGlCanvas.i: MyGlCanvas.cpp.i
+MyGlCanvas_a2.i: MyGlCanvas_a2.cpp.i
 
-.PHONY : MyGlCanvas.i
+.PHONY : MyGlCanvas_a2.i
 
 # target to preprocess a source file
-MyGlCanvas.cpp.i:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.i
-.PHONY : MyGlCanvas.cpp.i
+MyGlCanvas_a2.cpp.i:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.i
+.PHONY : MyGlCanvas_a2.cpp.i
 
-MyGlCanvas.s: MyGlCanvas.cpp.s
+MyGlCanvas_a2.s: MyGlCanvas_a2.cpp.s
 
-.PHONY : MyGlCanvas.s
+.PHONY : MyGlCanvas_a2.s
 
 # target to generate assembly for a file
-MyGlCanvas.cpp.s:
-	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas.cpp.s
-.PHONY : MyGlCanvas.cpp.s
+MyGlCanvas_a2.cpp.s:
+	$(MAKE) -f CMakeFiles/obj_view.dir/build.make CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.s
+.PHONY : MyGlCanvas_a2.cpp.s
 
 NanoguiMeshApp.o: NanoguiMeshApp.cpp.o
 
@@ -481,9 +481,9 @@ help:
 	@echo "... glfw_objects"
 	@echo "... glfw"
 	@echo "... embed-resource"
-	@echo "... MyGlCanvas.o"
-	@echo "... MyGlCanvas.i"
-	@echo "... MyGlCanvas.s"
+	@echo "... MyGlCanvas_a2.o"
+	@echo "... MyGlCanvas_a2.i"
+	@echo "... MyGlCanvas_a2.s"
 	@echo "... NanoguiMeshApp.o"
 	@echo "... NanoguiMeshApp.i"
 	@echo "... NanoguiMeshApp.s"

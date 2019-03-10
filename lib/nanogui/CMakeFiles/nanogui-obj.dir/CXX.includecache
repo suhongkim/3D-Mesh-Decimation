@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/nanogui_resources.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/nanogui_resources.cpp
 stdint.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/button.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/button.cpp
 nanogui/button.h
 -
 nanogui/theme.h
@@ -20,7 +20,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/checkbox.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/checkbox.cpp
 nanogui/checkbox.h
 -
 nanogui/opengl.h
@@ -30,7 +30,7 @@ nanogui/theme.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/colorpicker.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorpicker.cpp
 nanogui/colorpicker.h
 -
 nanogui/layout.h
@@ -38,7 +38,7 @@ nanogui/layout.h
 nanogui/colorwheel.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/colorwheel.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorwheel.cpp
 nanogui/colorwheel.h
 -
 nanogui/theme.h
@@ -52,7 +52,7 @@ Eigen/QR
 Eigen/Geometry
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/combobox.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/combobox.cpp
 nanogui/combobox.h
 -
 nanogui/layout.h
@@ -62,7 +62,7 @@ nanogui/serializer/core.h
 cassert
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/common.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/common.cpp
 nanogui/screen.h
 -
 windows.h
@@ -84,7 +84,7 @@ signal.h
 sys/dir.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/glcanvas.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glcanvas.cpp
 nanogui/window.h
 -
 nanogui/screen.h
@@ -98,7 +98,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/glutil.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glutil.cpp
 nanogui/glutil.h
 -
 malloc.h
@@ -110,7 +110,7 @@ fstream
 Eigen/Geometry
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/graph.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/graph.cpp
 nanogui/graph.h
 -
 nanogui/theme.h
@@ -120,13 +120,13 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/imagepanel.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imagepanel.cpp
 nanogui/imagepanel.h
 -
 nanogui/opengl.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/imageview.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imageview.cpp
 nanogui/imageview.h
 -
 nanogui/window.h
@@ -138,7 +138,7 @@ nanogui/theme.h
 cmath
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/label.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/label.cpp
 nanogui/label.h
 -
 nanogui/theme.h
@@ -148,7 +148,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/layout.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/layout.cpp
 nanogui/layout.h
 -
 nanogui/widget.h
@@ -162,7 +162,7 @@ nanogui/label.h
 numeric
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/messagedialog.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/messagedialog.cpp
 nanogui/messagedialog.h
 -
 nanogui/layout.h
@@ -172,7 +172,7 @@ nanogui/button.h
 nanogui/label.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/popup.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popup.cpp
 nanogui/popup.h
 -
 nanogui/theme.h
@@ -182,7 +182,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/popupbutton.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popupbutton.cpp
 nanogui/popupbutton.h
 -
 nanogui/theme.h
@@ -192,7 +192,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/progressbar.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/progressbar.cpp
 nanogui/progressbar.h
 -
 nanogui/opengl.h
@@ -200,7 +200,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/screen.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/screen.cpp
 nanogui/screen.h
 -
 nanogui/theme.h
@@ -222,13 +222,13 @@ GLFW/glfw3native.h
 nanovg_gl.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/serializer.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/serializer.cpp
 nanogui/serializer/core.h
 -
 iostream
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/slider.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/slider.cpp
 nanogui/slider.h
 -
 nanogui/theme.h
@@ -238,11 +238,11 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/stackedwidget.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/stackedwidget.cpp
 nanogui/stackedwidget.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/tabheader.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabheader.cpp
 nanogui/tabheader.h
 -
 nanogui/theme.h
@@ -252,7 +252,7 @@ nanogui/opengl.h
 numeric
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/tabwidget.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabwidget.cpp
 nanogui/tabwidget.h
 -
 nanogui/tabheader.h
@@ -270,7 +270,7 @@ nanogui/screen.h
 algorithm
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/textbox.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/textbox.cpp
 nanogui/window.h
 -
 nanogui/screen.h
@@ -288,7 +288,7 @@ regex
 iostream
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/theme.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/theme.cpp
 nanogui/theme.h
 -
 nanogui/opengl.h
@@ -298,7 +298,7 @@ nanogui/entypo.h
 nanogui_resources.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/vscrollpanel.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/vscrollpanel.cpp
 nanogui/vscrollpanel.h
 -
 nanogui/theme.h
@@ -308,7 +308,7 @@ nanogui/opengl.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/widget.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/widget.cpp
 nanogui/widget.h
 -
 nanogui/layout.h
@@ -324,7 +324,7 @@ nanogui/screen.h
 nanogui/serializer/core.h
 -
 
-/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/src/window.cpp
+/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/window.cpp
 nanogui/window.h
 -
 nanogui/theme.h

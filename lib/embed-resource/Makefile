@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles /home/suhongk/Documents/CMPT764_GM/assignment2/lib/embed-resource/CMakeFiles/progress.marks
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles 0
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles /home/suhongk/Documents/CMPT764_CG/assignment2/lib/embed-resource/CMakeFiles/progress.marks
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/clean
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/clean
 .PHONY : clean
 
 # The main clean target
@@ -130,22 +130,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/preinstall
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/preinstall
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/embed-resource/CMakeFiles/embed-resource.dir/rule:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/CMakeFiles/embed-resource.dir/rule
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/embed-resource/CMakeFiles/embed-resource.dir/rule
 .PHONY : lib/embed-resource/CMakeFiles/embed-resource.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ embed-resource: lib/embed-resource/CMakeFiles/embed-resource.dir/rule
 
 # fast build rule for target.
 embed-resource/fast:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/build
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/build
 .PHONY : embed-resource/fast
 
 embedresource.o: embedresource.cpp.o
@@ -164,7 +164,7 @@ embedresource.o: embedresource.cpp.o
 
 # target to build an object file
 embedresource.cpp.o:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.o
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.o
 .PHONY : embedresource.cpp.o
 
 embedresource.i: embedresource.cpp.i
@@ -173,7 +173,7 @@ embedresource.i: embedresource.cpp.i
 
 # target to preprocess a source file
 embedresource.cpp.i:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.i
 .PHONY : embedresource.cpp.i
 
 embedresource.s: embedresource.cpp.s
@@ -182,7 +182,7 @@ embedresource.s: embedresource.cpp.s
 
 # target to generate assembly for a file
 embedresource.cpp.s:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f lib/embed-resource/CMakeFiles/embed-resource.dir/build.make lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.s
 .PHONY : embedresource.cpp.s
 
 # Help Target
@@ -211,6 +211,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

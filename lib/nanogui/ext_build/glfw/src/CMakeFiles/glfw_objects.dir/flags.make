@@ -6,5 +6,5 @@ C_FLAGS = -O3 -DNDEBUG -fPIC   -Wall
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/include -I/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw/src -I/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src 
+C_INCLUDES = -I/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/include -I/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw/src -I/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src 
 

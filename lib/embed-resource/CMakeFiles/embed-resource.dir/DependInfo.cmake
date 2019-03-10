@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/suhongk/Documents/CMPT764_GM/assignment2/lib/embed-resource/embedresource.cpp" "/home/suhongk/Documents/CMPT764_GM/assignment2/lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.o"
+  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/embed-resource/embedresource.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/embed-resource/CMakeFiles/embed-resource.dir/embedresource.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

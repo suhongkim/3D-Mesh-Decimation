@@ -1,4 +1,4 @@
-# Install script for directory: /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/glfw
+# Install script for directory: /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext_build/glfw/src/cmake_install.cmake")
+  include("/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/src/cmake_install.cmake")
 
 endif()
 

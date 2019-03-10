@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "shader/vert.glsl.c"
   "shader/frag.glsl.c"
   "CMakeFiles/obj_view.dir/obj_view.cpp.o"
-  "CMakeFiles/obj_view.dir/MyGlCanvas.cpp.o"
+  "CMakeFiles/obj_view.dir/MyGlCanvas_a2.cpp.o"
   "CMakeFiles/obj_view.dir/NanoguiMeshApp.cpp.o"
   "CMakeFiles/obj_view.dir/shader/vert.glsl.c.o"
   "CMakeFiles/obj_view.dir/shader/frag.glsl.c.o"

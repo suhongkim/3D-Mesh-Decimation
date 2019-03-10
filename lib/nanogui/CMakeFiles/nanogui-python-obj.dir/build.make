@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_GM/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
 
 # Include any dependencies generated for this target.
 include lib/nanogui/CMakeFiles/nanogui-python-obj.dir/depend.make
@@ -59,16 +59,16 @@ include lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o: lib/nanogui/python/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/main.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/main.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/main.cpp > CMakeFiles/nanogui-python-obj.dir/python/main.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/main.cpp > CMakeFiles/nanogui-python-obj.dir/python/main.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/main.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/main.cpp -o CMakeFiles/nanogui-python-obj.dir/python/main.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/main.cpp -o CMakeFiles/nanogui-python-obj.dir/python/main.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o.provides.build: 
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o: lib/nanogui/python/constants_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_glfw.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_glfw.cpp > CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_glfw.cpp > CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_glfw.cpp -o CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_glfw.cpp -o CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o.requires:
 
@@ -107,16 +107,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o.provid
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o: lib/nanogui/python/constants_entypo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_entypo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_entypo.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_entypo.cpp > CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_entypo.cpp > CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/constants_entypo.cpp -o CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_entypo.cpp -o CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o.requires:
 
@@ -131,16 +131,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o.prov
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o: lib/nanogui/python/eigen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/eigen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/eigen.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/eigen.cpp > CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/eigen.cpp > CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/eigen.cpp -o CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/eigen.cpp -o CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o.requires:
 
@@ -155,16 +155,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o.provides.build:
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o: lib/nanogui/python/widget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/widget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/widget.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/widget.cpp > CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/widget.cpp > CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/widget.cpp -o CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/widget.cpp -o CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o.requires:
 
@@ -179,16 +179,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o.provides.build
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o: lib/nanogui/python/layout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/layout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/layout.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/layout.cpp > CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/layout.cpp > CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/layout.cpp -o CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/layout.cpp -o CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o.requires:
 
@@ -203,16 +203,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o.provides.build
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o: lib/nanogui/python/basics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/basics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/basics.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/basics.cpp > CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/basics.cpp > CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/basics.cpp -o CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/basics.cpp -o CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o.requires:
 
@@ -227,16 +227,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o.provides.build
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o: lib/nanogui/python/button.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/button.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/button.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/button.cpp > CMakeFiles/nanogui-python-obj.dir/python/button.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/button.cpp > CMakeFiles/nanogui-python-obj.dir/python/button.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/button.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/button.cpp -o CMakeFiles/nanogui-python-obj.dir/python/button.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/button.cpp -o CMakeFiles/nanogui-python-obj.dir/python/button.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o.requires:
 
@@ -251,16 +251,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o.provides.build
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o: lib/nanogui/python/tabs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/tabs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/tabs.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/tabs.cpp > CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/tabs.cpp > CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/tabs.cpp -o CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/tabs.cpp -o CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o.requires:
 
@@ -275,16 +275,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o.provides.build: 
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o: lib/nanogui/python/textbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/textbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/textbox.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/textbox.cpp > CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/textbox.cpp > CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/textbox.cpp -o CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/textbox.cpp -o CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o.requires:
 
@@ -299,16 +299,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o.provides.buil
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o: lib/nanogui/python/glcanvas.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glcanvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glcanvas.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glcanvas.cpp > CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glcanvas.cpp > CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glcanvas.cpp -o CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glcanvas.cpp -o CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o.requires:
 
@@ -323,16 +323,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o.provides.bui
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o: lib/nanogui/python/formhelper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/formhelper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/formhelper.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/formhelper.cpp > CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/formhelper.cpp > CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/formhelper.cpp -o CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/formhelper.cpp -o CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o.requires:
 
@@ -347,16 +347,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o.provides.b
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o: lib/nanogui/python/misc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/misc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/misc.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/misc.cpp > CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/misc.cpp > CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/misc.cpp -o CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/misc.cpp -o CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o.requires:
 
@@ -371,16 +371,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o.provides.build: 
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o: lib/nanogui/python/glutil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glutil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glutil.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glutil.cpp > CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glutil.cpp > CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/glutil.cpp -o CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glutil.cpp -o CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o.requires:
 
@@ -395,16 +395,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o.provides.build
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o: lib/nanogui/python/nanovg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/nanovg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/nanovg.cpp
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/nanovg.cpp > CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/nanovg.cpp > CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/python/nanovg.cpp -o CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/nanovg.cpp -o CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o.requires:
 
@@ -419,16 +419,16 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o.provides.build
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o: lib/nanogui/CMakeFiles/nanogui-python-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o: lib/nanogui/ext/coro/coro.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_GM/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o   -c /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/coro/coro.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o"
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/coro/coro.c
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.i"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/coro/coro.c > CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.i
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/coro/coro.c > CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.i
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.s"
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/ext/coro/coro.c -o CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.s
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/coro/coro.c -o CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.s
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o.requires:
 
@@ -486,10 +486,10 @@ lib/nanogui/CMakeFiles/nanogui-python-obj.dir/requires: lib/nanogui/CMakeFiles/n
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/requires
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/clean:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui-python-obj.dir/cmake_clean.cmake
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui-python-obj.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/clean
 
 lib/nanogui/CMakeFiles/nanogui-python-obj.dir/depend:
-	cd /home/suhongk/Documents/CMPT764_GM/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_GM/assignment2 /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_GM/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/nanogui/CMakeFiles/nanogui-python-obj.dir/depend
 
