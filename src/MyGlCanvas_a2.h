@@ -54,7 +54,8 @@ using nanogui::MatrixXu;
 using nanogui::MatrixXf;
 using nanogui::Label;
 using nanogui::Arcball;
- 
+using nanogui::GLShader; 
+using nanogui::Vector3f;
 
 // Modified winged Edge
 struct W_edge; 
@@ -92,6 +93,17 @@ inline float deg2rad(int degree) {
     return ((float)degree * 3.14f) / 180.0f;
 }
 
+inline int ptr2idx(Vertex * dptr, Vertex * arr0){
+    return &(*dptr) - &(*arr0);   
+}
+inline int ptr2idx(W_edge * dptr, W_edge * arr0){
+    return &(*dptr) - &(*arr0);   
+}
+inline int ptr2idx(Face * dptr, Face * arr0){
+    return &(*dptr) - &(*arr0);   
+}
+
+
 class MyGLCanvas : public nanogui::GLCanvas {
 public:
     MyGLCanvas(Widget *parent); 
@@ -112,8 +124,6 @@ public:
 
     nanogui::Matrix4f updateMVP();
 
-    void updateMeshInfo(int n_v, int n_f);
-
     void updateWingEdge(MatrixXf &positions, MatrixXu &indice);
 
     void updateMeshes(); 
@@ -129,6 +139,7 @@ public:
     //Mutiple Choice Decimation based on Quadric 
     void decimateMesh(int n_decimate); 
     nanogui::Matrix4f calcVertexQuadric(Vertex * v); 
+    void findAdjecents(W_edge * c_pair, vector<int> &e_olds, vector<int> &f_olds);
     
     //OpenGL calls this method constantly to update the screen.
     virtual void drawGL() override; 
@@ -137,28 +148,25 @@ public:
 //Need to be updated if a interface element is interacting with something that is inside the scope of MyGLCanvas
 private:
     //for Winged Edge
-    Vertex  *mVertice;
-    Face    *mFaces;
-    W_edge  *mEdges; // winged edge has two directions
-    // for shader
+    vector<Vertex> mVertice;
+    vector<Face>   mFaces;
+    vector<W_edge> mEdges; // winged edge has two directions
+    // for Mesah Info
     MatrixXf mPositions;
     MatrixXf mNormals;
     MatrixXf mVNormals;
     MatrixXf mFNormals;
     MatrixXf mColors;
-    nanogui::GLShader mShader;
-    nanogui::Vector3f mTransVec;
-    nanogui::Vector3f mScaleVec;
-    nanogui::Vector3f mRotatVec;
-    int n_face;
-    int n_vertex;
-    int n_edge;
+    // for shader
+    GLShader mShader;
+    Vector3f mTransVec;
+    Vector3f mScaleVec;
+    Vector3f mRotatVec;
     bool isFaceOn = true;
     bool isLineOn = false;
     enum MeshForms {Flat_Shaded, Smooth_Shaded, Wireform, Shaded_with_Wire};
     // decimation
-    int randomK = 5; 
-
+    int mRandomK = 5; 
 };
 
 #endif

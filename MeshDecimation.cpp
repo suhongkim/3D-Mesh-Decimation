@@ -40,16 +40,64 @@ nanogui::Matrix4f MyGLCanvas::calcVertexQuadric(Vertex * v) {
     return q; 
 }
 
+void MyGLCanvas::findAdjecents(W_edge * c_pair, vector<int> &e_olds, vector<int> &f_olds) {
+    // find adjecent edges without collapse edge
+    W_edge * e0 = c_pair; // collapse edge
+    W_edge * e = e0; 
+    int count = 0;
+
+    while(1) {        
+        //Adjecent edges  
+        W_edge * ec; // counter edge 
+        if (*(e->end) == *(c_pair->start)) {
+            e = e->right_next;  // e.end == v_collapse
+            ec = e->left_prev->right_next;  //ec.start == v_collapse
+        } else {
+            e = e->left_next; // e.start == v_collapse 
+            ec = e->left_prev->right_next;  // ec.end == v_collapse 
+        }
+
+        if(*e == *e0)  { 
+            // Stop if it sees the initial edge     
+            cout << "Edge found : "<< count << endl;
+
+            // remove collapse face 
+            f_olds.pop_back(); 
+
+            break;
+        }
+        else{
+            // Save the adjecent edge indice except collapse edge 
+            e_olds.push_back(ptr2idx(e, &mEdges[0])); 
+            e_olds.push_back(ptr2idx(ec, &mEdges[0]));
+            // Save the RIGHT face indice on adjecent edge escept collapse edge 
+            f_olds.push_back(ptr2idx(e->right, &mFaces[0])); 
+        }
+
+        if(count > 36) {cout << " countover " << endl; break;} // no inf
+        count ++;
+    }
+}
 
 void MyGLCanvas::decimateMesh(int n_decimate) {
-    // [Step1] choose minimum quadric aomng random k edges 
-    srand (time(NULL));  // init random seed 
-    W_edge *min_edge; 
-    float min_cost = numeric_limits<float>::max();
+    // check v_new step by step 
+    // check connection 
 
-    for (int k = 0; k < randomK; k++) {
-        int r_idx = rand() % n_edge;
-        W_edge *r_edge = &mEdges[r_idx];
+
+    cout <<" operation starts ...................... " << endl; 
+    cout <<" size of mVertice: " << mVertice.size() << endl;
+    cout <<" size of mEdges: " << mEdges.size() << endl;
+    cout <<" size of mFaces: " << mFaces.size() << endl;
+    
+    // [Step1] choose minimum quadric aomng random k edges -> upto n_decimate ? (using dirty(adj))
+    srand (time(NULL));  // init random seed  
+    float min_cost = numeric_limits<float>::max();
+    int i_old(0); 
+    Vertex v_new; 
+
+    for (int k = 0; k < mRandomK; k++) {
+        int r_idx = rand() % mVertice.size();
+        W_edge *r_edge = mVertice[r_idx].edge;
 
         // calculate vertex error quadric  
         Matrix4f q1 = calcVertexQuadric(r_edge->start);
@@ -61,11 +109,10 @@ void MyGLCanvas::decimateMesh(int n_decimate) {
         A.row(3) = Vector4f(0.0, 0.0, 0.0, 1.0); 
         MatrixXf b (4, 1); 
         b << 0.0, 0.0, 0.0, 1.0; 
-        MatrixXf v_opt (4, 1); 
-        v_opt << 0.0, 0.0, 0.0, 1.0; 
-        if (A.determinant() > 0.0) { // check if invertable
+        MatrixXf v_opt (4, 1);
+        cout << "determinant : " << A.determinant() << endl; 
+        if (A.determinant() > 0.0001) { // check if invertable
             v_opt = A.inverse() * b;
-            //v_opt << v_bar(0,0)/v_bar(0,3), v_bar(0,1)/v_bar(0,3), v_bar(0,2)/v_bar(0,3); 
         }
         else { // set v_opt as midpoint of v1 and v2 
             v_opt(0,0) = 0.5*(r_edge->start->x + r_edge->end->x); 
@@ -76,25 +123,77 @@ void MyGLCanvas::decimateMesh(int n_decimate) {
 
         // calculate cost 
         float cost = (v_opt.transpose()*(q1+q2)*v_opt).value();
-
-
-        cout << cost << endl;
-        cout << min_cost << endl; 
-
+    
         // get min cost 
-        if (cost < min_cost) {
+        if ((k == 0) || (cost < min_cost)) {
             min_cost = cost; 
-            min_edge = r_edge; 
+            i_old = r_idx; 
+            v_new.x = v_opt(0,0)/v_opt(0,3); 
+            v_new.y = v_opt(0,1)/v_opt(0,3); 
+            v_new.z = v_opt(0,2)/v_opt(0,3); 
         }
     }
+    cout << "v_new : " << v_new.x << " " <<  v_new.y << " " <<  v_new.z << endl; 
 
     //[Step 2] Edge collapse and update local new vertex (vertex normal and face normal)
-    // How can remove vertex????? 
+    // (1) find decimate targets (Index) : vertex(2), edges(3*2), faces(2)  
+    vector<int> v_decimate(2);  
+    v_decimate[0] = i_old; 
+    v_decimate[1] = ptr2idx(mVertice[i_old].edge->end, &mVertice[0]); 
+    
+    vector<int> e_decimate(3*2);
+    e_decimate[0] = ptr2idx(mVertice[i_old].edge, &mEdges[0]);  // Collapse
+    e_decimate[1] = ptr2idx(mVertice[i_old].edge->left_prev, &mEdges[0]); // Duplicate after Collapse
+    e_decimate[2] = ptr2idx(mVertice[i_old].edge->right_prev, &mEdges[0]); // Duplicate after Collapse
+    e_decimate[3] = ptr2idx(mEdges[e_decimate[0]].left_prev->right_next, &mEdges[0]);  //counter
+    e_decimate[4] = ptr2idx(mEdges[e_decimate[1]].left_prev->right_next, &mEdges[0]);  //counter
+    e_decimate[5] = ptr2idx(mEdges[e_decimate[2]].left_prev->right_next, &mEdges[0]);  //counter
 
-    //[Step 3] Update Mesh Data 
-    //updateMeshInfo(); 
-    //updateMeshes(); 
+    vector<int> f_decimate(2);
+    f_decimate[0] = ptr2idx(mVertice[i_old].edge->right, &mFaces[0]); 
+    f_decimate[1] = ptr2idx(mVertice[i_old].edge->left, &mFaces[0]); 
 
+    // (2) find old edges and faces for updating 
+    vector<int> e_update; 
+    vector<int> f_update; 
+    findAdjecents(mVertice[i_old].edge, e_update, f_update); 
+    findAdjecents(mVertice[i_old].edge->left_prev->right_next, e_update, f_update); 
+    
+    // (3) add new vertex and update Edges with new vertex ==> need more connection ?????? 
+    mVertice.push_back(v_new);
+    for (int e_idx : e_update) { 
+        if (*(mEdges[e_idx].start) == mVertice[i_old]){
+            mEdges[e_idx].start = &mVertice.back(); 
+        }
+        if (*(mEdges[e_idx].end) == mVertice[i_old]){
+            mEdges[e_idx].end = &mVertice.back(); 
+        }  
+    }
+
+    // (4) decimate targets
+    for (int v_idx : v_decimate) { mVertice.erase(mVertice.begin() + v_idx); }
+    for (int e_idx : e_decimate) { mEdges.erase(mEdges.begin() + e_idx); }
+    for (int f_idx : f_decimate) { mFaces.erase(mFaces.begin() + f_idx); }
+
+    // (5) update normal info for faces and vertice
+    Vector3f vnormal (0.0, 0.0, 0.0); 
+    for (int fn = 0; fn < f_update.size(); fn++) {
+        Vector3f v1 (mFaces[fn].edge->start->x, mFaces[fn].edge->start->y, mFaces[fn].edge->start->z);  
+        Vector3f v2 (mFaces[fn].edge->end->x, mFaces[fn].edge->end->y, mFaces[fn].edge->end->z);  
+        Vector3f v3 (mFaces[fn].edge->right_next->end->x, mFaces[fn].edge->right_next->end->y, mFaces[fn].edge->right_next->end->z);  
+        mFaces[fn].normal = (v2-v1).cross(v3-v1).normalized();
+        vnormal += mFaces[fn].normal; 
+    }
+    mVertice.back().normal = vnormal.normalized(); 
+   
+    //[Step 3] Update Mesh Data     
+    updateMeshes(); 
+
+
+    cout <<" size of mVertice: " << mVertice.size() << endl;
+    cout <<" size of mEdges: " << mEdges.size() << endl;
+    cout <<" size of mFaces: " << mFaces.size() << endl;
+    cout <<" operation is done ......................" << endl; 
 
 }
     

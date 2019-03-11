@@ -1,30 +1,9 @@
 #include "MyGlCanvas_a2.h"
 
-using std::cout;
-using std::cerr;
-using std::endl;
-using std::string;
-using std::vector;
-using std::pair;
-using std::to_string;
-
-using nanogui::Screen;
-using nanogui::Window;
-using nanogui::GroupLayout;
-using nanogui::Button;
-using nanogui::CheckBox;
-using nanogui::Vector2f;
-using nanogui::Vector2i;
-using nanogui::MatrixXu;
-using nanogui::MatrixXf;
-using nanogui::Label;
-using nanogui::Arcball;
-
-
+using namespace std;
+using namespace nanogui; 
 
 MyGLCanvas::MyGLCanvas(Widget *parent) : nanogui::GLCanvas(parent) {
-    using namespace nanogui;
-
     mShader.initFromFiles("a_smooth_shader", "StandardShading.vertexshader", "StandardShading.fragmentshader");
 
     mShader.bind();
@@ -57,8 +36,6 @@ MyGLCanvas::MyGLCanvas(Widget *parent) : nanogui::GLCanvas(parent) {
 
     
 void MyGLCanvas::drawGL() {
-    using namespace nanogui;
-
     //refer to the previous explanation of mShader.bind();
     mShader.bind();
 
@@ -75,15 +52,13 @@ void MyGLCanvas::drawGL() {
     // Avoid changing if you are unsure of what this means.
     glEnable(GL_DEPTH_TEST);
 
-    if(isFaceOn) mShader.drawArray(GL_TRIANGLES, 0, n_face*3);
-    if(isLineOn) mShader.drawArray(GL_LINES, n_face*3, n_face*3*2);
+    if(isFaceOn) mShader.drawArray(GL_TRIANGLES, 0, mFaces.size()*3); 
+    if(isLineOn) mShader.drawArray(GL_LINES, mFaces.size()*3, mFaces.size()*3*2); 
 
     glDisable(GL_DEPTH_TEST);
 }
 
 nanogui::Matrix4f MyGLCanvas::updateMVP() {
-    using namespace nanogui;
-
     Matrix4f translation;
     translation.setIdentity();
     translation.block(0, 3, 3, 3) = mTransVec;
@@ -102,28 +77,21 @@ nanogui::Matrix4f MyGLCanvas::updateMVP() {
     return mvp;
 }
 
-void MyGLCanvas::updateMeshInfo(int n_v, int n_f) {
-    n_vertex = n_v; 
-    n_face = n_f; 
-    n_edge = 3*n_face; //2*(n_vertex + n_face -2); // genus=0  V + F - E/2 = 2 - 2G
-}
-
-
 void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
 
     //< Winged Edge Structure>
-    mVertice = new Vertex[n_vertex]; 
-    mFaces = new Face[n_face]; 
-    mEdges = new W_edge[n_edge]; 
+    mVertice = vector<Vertex>(positions.cols()); 
+    mFaces = vector<Face>(indice.cols());
+    mEdges = vector<W_edge>(3*indice.cols()); 
 
     // [step1] Initialize Vertex from positions
-    for (int v = 0; v < positions.cols(); v++) {
-        mVertice[v].x = positions.col(v)[0];
-        mVertice[v].y = positions.col(v)[1];
-        mVertice[v].z = positions.col(v)[2];
+    for (int v = 0; v < mVertice.size(); v++) { 
+        mVertice[v].x = positions.col(v)[0]; 
+        mVertice[v].y = positions.col(v)[1]; 
+        mVertice[v].z = positions.col(v)[2]; 
     }
     // [step2] Initialize Face and Edges on Right Face
-    for (int f = 0; f < n_face; f++) {
+    for (int f = 0; f < mFaces.size(); f++) {
         // position(vertex) index of each face
         int v_idx[3] = {indice.col(f)[0], indice.col(f)[1], indice.col(f)[2]};
         // edge index of each face
@@ -136,9 +104,9 @@ void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
         //  edge1 = v2-v1
         //  edge2 = v3-v1
         //  triangle.normal = cross(edge1, edge2).normalize           
-        nanogui::Vector3f v1 = positions.col(v_idx[0]);
-        nanogui::Vector3f v2 = positions.col(v_idx[1]);
-        nanogui::Vector3f v3 = positions.col(v_idx[2]);
+        Vector3f v1 = positions.col(v_idx[0]);
+        Vector3f v2 = positions.col(v_idx[1]);
+        Vector3f v3 = positions.col(v_idx[2]);
         mFaces[f].normal = (v2-v1).cross(v3-v1).normalized();
         
         // vertice & edges
@@ -154,8 +122,8 @@ void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
         }
     }
     // [step3] fill up the leftover info of edges
-    for (int e = 0; e < n_edge; e++) {
-        for (int ce = n_edge-1; ce >= 0; ce--) {
+    for (int e = 0; e < mEdges.size(); e++) {
+        for (int ce = mEdges.size()-1; ce >= 0; ce--) {
             if(mEdges[e].start == mEdges[ce].end && mEdges[e].end == mEdges[ce].start) {
                 mEdges[e].left       = mEdges[ce].right;
                 mEdges[e].left_next  = mEdges[ce].right_next;
@@ -166,7 +134,7 @@ void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
     }
 
     // [step4] Add Vertex normal 
-    for (int vn = 0; vn < n_vertex; vn++) {
+    for (int vn = 0; vn < mVertice.size(); vn++) {
         Vertex * v = &mVertice[vn];
         W_edge * e0 = v->edge;
         W_edge * e = e0;
@@ -200,9 +168,8 @@ void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
 
 
 void MyGLCanvas::updateMeshes() {
-    using namespace nanogui;
-
-    // update mPositions, mNormals based on Faces
+    // update mPositions, mNormals based on WingedEdge data
+    int n_face = mFaces.size();
     mPositions = MatrixXf(3, 3*n_face + n_face*3*2);
     mVNormals  = MatrixXf(3, 3*n_face + n_face*3*2);    // vertex normal for smooth shading
     mFNormals  = MatrixXf(3, 3*n_face + n_face*3*2);    // vertex normal for flat shading
@@ -241,9 +208,7 @@ void MyGLCanvas::updateMeshes() {
 }
 
 void MyGLCanvas::updateNewMesh(MatrixXf &positions, MatrixXu &indice) {
-    using namespace nanogui;
-
-    // 0. Need to scale meshes into [-1, 1] (Centered)
+    // 1. Need to scale meshes into [-1, 1] (Centered)
     Vector3f max = positions.rowwise().maxCoeff();
     Vector3f min = positions.rowwise().minCoeff();
 
@@ -252,9 +217,6 @@ void MyGLCanvas::updateNewMesh(MatrixXf &positions, MatrixXu &indice) {
         positions.col(p)[1] = 2 * (positions.col(p)[1]-min[1])/(max[1]-min[1]) -1;
         positions.col(p)[2] = 2 * (positions.col(p)[2]-min[2])/(max[2]-min[2]) -1;
     }
-
-    // 1. Update number info of Mesh 
-    updateMeshInfo(positions.cols(), indice.cols()); 
 
     // 2. Update Winged Edge DataStructure
     updateWingEdge(positions, indice);
