@@ -40,7 +40,7 @@ private:
     float scales[3] = {1.0f, 1.0f, 1.0f};
     MatrixXf objPositions;
     MatrixXu objIndices;
-    int n_decimate = 0;
+    int n_decimate = 1;
     
 };
 

@@ -72,7 +72,10 @@ NanoguiMeshApp::NanoguiMeshApp(): nanogui::Screen(Eigen::Vector2i(900, 600), "Na
     b_save->setCallback([&] {
       string file_path =  file_dialog(
         { {"png", "Portable Network Graphics"}, {"txt", "Text file"}, {"obj", "Obj File"} }, true);
-        NanoguiMeshApp::save_obj(file_path, objPositions, objIndices);
+        MatrixXf nPositions;
+        MatrixXu nIndice;
+        mCanvas->getObjForm(file_path, nPositions, nIndice);
+        //NanoguiMeshApp::save_obj(file_path, nPositions, nIndice);
     });
     b_save->setTooltip("Save your mesh");
 
@@ -184,17 +187,16 @@ NanoguiMeshApp::NanoguiMeshApp(): nanogui::Screen(Eigen::Vector2i(900, 600), "Na
     auto intBox = new IntBox<int>(panel2);
     intBox->setEditable(true);
     intBox->setFixedSize(Vector2i(80, 25));
-    intBox->setValue(10);
+    intBox->setValue(1);
     // intBox->setUnits("Mhz");
     intBox->setDefaultValue("0");
     intBox->setFontSize(16);
     intBox->setFormat("[1-9][0-9]*");
     intBox->setSpinnable(true);
     intBox->setMinValue(1);
-    intBox->setValueIncrement(10);
+    intBox->setValueIncrement(1);
     intBox->setCallback([&](int n) {
       NanoguiMeshApp::n_decimate = n;
-      mCanvas->decimateMesh(NanoguiMeshApp::n_decimate); 
     });
     Button *b_decimate = new Button(panel2, "Decimate");
     b_decimate->setCallback([&] {
@@ -264,6 +266,10 @@ void NanoguiMeshApp::load_obj(string file_path, nanogui::MatrixXf &newPositions,
 void NanoguiMeshApp::save_obj (string file_path, nanogui::MatrixXf &positions, nanogui::MatrixXu &faces)
 {
   std::ofstream file;
+
+  for (int i = 0; i < positions.cols(); i++) {
+    cout << positions(0, i) << ". " << positions(1,i) << ", " << positions(2,i) << endl;
+  }
 
   file.open (file_path.c_str());
   file << '#'<<' '<< positions.cols() <<' '<< faces.cols() << endl;

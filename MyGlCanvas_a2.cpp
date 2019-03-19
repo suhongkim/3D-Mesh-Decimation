@@ -77,76 +77,81 @@ nanogui::Matrix4f MyGLCanvas::updateMVP() {
     return mvp;
 }
 
-void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
+void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice,
+                 vector<Vertex> &vertices, vector<Face> &faces, vector<W_edge> &edges) {
 
     //< Winged Edge Structure>
-    mVertice = vector<Vertex>(positions.cols()); 
-    mFaces = vector<Face>(indice.cols());
-    mEdges = vector<W_edge>(3*indice.cols()); 
+    vertices = vector<Vertex>(positions.cols()); 
+    faces = vector<Face>(indice.cols());
+    edges = vector<W_edge>(3*indice.cols()); 
 
     // [step1] Initialize Vertex from positions
-    for (int v = 0; v < mVertice.size(); v++) { 
-        mVertice[v].x = positions.col(v)[0]; 
-        mVertice[v].y = positions.col(v)[1]; 
-        mVertice[v].z = positions.col(v)[2]; 
+    for (int v = 0; v < vertices.size(); v++) { 
+        vertices[v].x = positions.col(v)[0]; 
+        vertices[v].y = positions.col(v)[1]; 
+        vertices[v].z = positions.col(v)[2]; 
     }
+    
     // [step2] Initialize Face and Edges on Right Face
-    for (int f = 0; f < mFaces.size(); f++) {
+    for (int f = 0; f < faces.size(); f++) {
         // position(vertex) index of each face
         int v_idx[3] = {indice.col(f)[0], indice.col(f)[1], indice.col(f)[2]};
         // edge index of each face
         int e_idx[3] = {3*f + 0, 3*f + 1, 3*f + 2};
         
         // face
-        mFaces[f].edge = &mEdges[e_idx[0]]; // first edge of each triangle
+        faces[f].edge = &edges[e_idx[0]]; // first edge of each triangle
         //claculate Face normal
         //  triangle ( v1, v2, v3 )
         //  edge1 = v2-v1
         //  edge2 = v3-v1
-        //  triangle.normal = cross(edge1, edge2).normalize           
+        //  triangle.normal = cross(edge1, edge2).normalize     
+            
         Vector3f v1 = positions.col(v_idx[0]);
         Vector3f v2 = positions.col(v_idx[1]);
         Vector3f v3 = positions.col(v_idx[2]);
-        mFaces[f].normal = (v2-v1).cross(v3-v1).normalized();
         
-        // vertice & edges
+        faces[f].normal = (v2-v1).cross(v3-v1).normalized();
+     
+        // vertices & edges
         for (int i = 0; i < 3; i++) {
-            // vertice
-            mVertice[v_idx[i]].edge = &mEdges[e_idx[i]]; // edge with start
+            // vertices
+            vertices[v_idx[i]].edge = &edges[e_idx[i]]; // edge with start
             // edges (counter clockwise) : f = Right Face for all faces, edges
-            mEdges[e_idx[i]].start = &mVertice[v_idx[i]];
-            mEdges[e_idx[i]].end   = &mVertice[v_idx[(i + 1)%3]];
-            mEdges[e_idx[i]].right = &mFaces[f];
-            mEdges[e_idx[i]].right_next = &mEdges[e_idx[(i + 1)%3]];
-            mEdges[e_idx[i]].right_prev = &mEdges[e_idx[(i + 2)%3]];
+            edges[e_idx[i]].start = &vertices[v_idx[i]];
+            edges[e_idx[i]].end   = &vertices[v_idx[(i + 1)%3]];
+            edges[e_idx[i]].right = &faces[f];
+            edges[e_idx[i]].right_next = &edges[e_idx[(i + 1)%3]];
+            edges[e_idx[i]].right_prev = &edges[e_idx[(i + 2)%3]];
         }
+          
     }
     // [step3] fill up the leftover info of edges
-    for (int e = 0; e < mEdges.size(); e++) {
-        for (int ce = mEdges.size()-1; ce >= 0; ce--) {
-            if(mEdges[e].start == mEdges[ce].end && mEdges[e].end == mEdges[ce].start) {
-                mEdges[e].left       = mEdges[ce].right;
-                mEdges[e].left_next  = mEdges[ce].right_next;
-                mEdges[e].left_prev  = mEdges[ce].right_prev;
+    for (int e = 0; e < edges.size(); e++) {
+        for (int ce = edges.size()-1; ce >= 0; ce--) {
+            if(edges[e].start == edges[ce].end && edges[e].end == edges[ce].start) {
+                edges[e].left       = edges[ce].right;
+                edges[e].left_next  = edges[ce].right_next;
+                edges[e].left_prev  = edges[ce].right_prev;
                 break;
             }
         }
     }
-
-    // [step4] Add Vertex normal 
-    for (int vn = 0; vn < mVertice.size(); vn++) {
-        Vertex * v = &mVertice[vn];
+    
+    //[step4] Add Vertex normal 
+    for (int vn = 0; vn < vertices.size(); vn++) {
+        Vertex * v = &vertices[vn];
         W_edge * e0 = v->edge;
         W_edge * e = e0;
         nanogui::Vector3f normal(0.0f, 0.0f, 0.0f);
         int count = 0;
-
         while(1) {
             //find Face Edge and move e
             W_edge * faceEdge;
             if (*(e->end) == *v) {
                 faceEdge = e->right->edge;
                 e = (e->right_next);
+                
             } else {
                 faceEdge = e->left->edge;
                 e = (e->left_next);
@@ -155,7 +160,7 @@ void MyGLCanvas::updateWingEdge(MatrixXf &positions, MatrixXu &indice) {
             // triangle tr1, tr2, tr3 // all share vertex v1
             // v1.normal = normalize( tr1.normal + tr2.normal + tr3.normal )
             normal += faceEdge->right->normal;
-            
+        
             // Stop if it sees the initial edge
             if(*e == *e0)  break;
             if(count > 36) {cout << " countover " << endl; break;} // no inf
@@ -219,8 +224,8 @@ void MyGLCanvas::updateNewMesh(MatrixXf &positions, MatrixXu &indice) {
     }
 
     // 2. Update Winged Edge DataStructure
-    updateWingEdge(positions, indice);
-
+    updateWingEdge(positions, indice, mVertices, mFaces, mEdges);
+    
     // 3. Update Mesh data
     updateMeshes(); 
 }
@@ -252,3 +257,31 @@ void MyGLCanvas::updateMeshForm(unsigned int meshForms){
     }   
 }
 
+void MyGLCanvas::getObjForm(string file_path, MatrixXf &positions, MatrixXu &indices) {
+    // positions
+    positions = MatrixXf(3, mVertices.size());
+    for (int i = 0; i < mVertices.size(); i++) {
+        positions.col(i) << mVertices[i].x, mVertices[i].y, mVertices[i].z; 
+    }
+    // indicies 
+    indices = MatrixXu(3, mFaces.size());
+    for (int i = 0; i < mFaces.size(); i++) {
+        indices.col(i) <<  ptr2idx(mFaces[i].edge->start, &mVertices[0]), 
+                        ptr2idx(mFaces[i].edge->end, &mVertices[0]), 
+                        ptr2idx(mFaces[i].edge->right_next->end, &mVertices[0]);  
+    }
+
+
+   std::ofstream file;
+
+  file.open (file_path.c_str());
+  file << '#'<<' '<< positions.cols() <<' '<< indices.cols() << endl;
+  for (int p = 0; p < positions.cols(); p++) {
+      file << 'v' <<' '<< positions(0, p)<<' '<< positions(1, p) <<' '<< positions(2, p) << endl;
+  }
+  for (int i = 0; i < mFaces.size(); i++) {
+      file << 'f' <<' '<< ptr2idx(mFaces[i].edge->start, &mVertices[0]) + 1 <<' '<< ptr2idx(mFaces[i].edge->end, &mVertices[0]) + 1 <<' '<< ptr2idx(mFaces[i].edge->right_next->end, &mVertices[0]) + 1 << endl;
+  }
+  file.close();
+
+}
