@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "python/nanogui.pdb"
   "python/nanogui.cpython-37m-x86_64-linux-gnu.so"
-  "python/nanogui.pdb"
-  "CMakeFiles/CMakeRelink.dir/nanogui.cpython-37m-x86_64-linux-gnu.so"
 )
 
 # Per-language clean rules from dependency scanning.

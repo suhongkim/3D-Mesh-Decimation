@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/fontstash.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/fontstash.h
 ft2build.h
 -
 math.h
 -
 stb_truetype.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_truetype.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_truetype.h
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/nanovg.c
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/nanovg.c
 stdlib.h
 -
 stdio.h
@@ -24,17 +24,17 @@ math.h
 memory.h
 -
 nanovg.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/nanovg.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/nanovg.h
 fontstash.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/fontstash.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/fontstash.h
 stb_image.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_image.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_image.h
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/nanovg.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/nanovg.h
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_image.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_image.h
 stb_image.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_image.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_image.h
 stdio.h
 -
 stdarg.h
@@ -60,13 +60,13 @@ intrin.h
 arm_neon.h
 -
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_truetype.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_truetype.h
 stb_truetype.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_truetype.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_truetype.h
 stdio.h
 -
 stb_truetype.h
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/stb_truetype.h
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/stb_truetype.h
 math.h
 -
 math.h

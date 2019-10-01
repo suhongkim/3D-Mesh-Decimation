@@ -1,4 +1,4 @@
-# Install script for directory: /home/suhongk/Documents/CMPT764_CG/assignment2
+# Install script for directory: /home/suhongk/Documents/Blog/3D_Mesh_Decimation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/cmake_install.cmake")
-  include("/home/suhongk/Documents/CMPT764_CG/assignment2/lib/embed-resource/cmake_install.cmake")
+  include("/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/cmake_install.cmake")
+  include("/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/embed-resource/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/suhongk/Documents/CMPT764_CG/assignment2/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

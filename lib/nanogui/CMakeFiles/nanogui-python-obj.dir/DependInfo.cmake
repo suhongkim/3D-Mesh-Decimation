@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/coro/coro.c" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/coro/coro.c" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/ext/coro/coro.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -30,21 +30,21 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/suhongk/anaconda3/include/python3.7m"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/basics.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/button.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_entypo.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/constants_glfw.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/eigen.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/formhelper.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glcanvas.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/glutil.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/layout.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/main.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/misc.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/nanovg.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/tabs.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/textbox.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o"
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/python/widget.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/basics.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/basics.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/button.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/button.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/constants_entypo.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_entypo.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/constants_glfw.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/constants_glfw.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/eigen.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/eigen.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/formhelper.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/formhelper.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/glcanvas.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glcanvas.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/glutil.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/glutil.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/layout.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/layout.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/main.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/main.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/misc.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/misc.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/nanovg.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/nanovg.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/tabs.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/tabs.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/textbox.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/textbox.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/python/widget.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-python-obj.dir/python/widget.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

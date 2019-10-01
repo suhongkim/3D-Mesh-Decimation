@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/example1.cpp" "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.o"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/example1.cpp" "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/example1.dir/src/example1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -31,7 +31,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
+  "/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

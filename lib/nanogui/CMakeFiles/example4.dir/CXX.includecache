@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/example4.cpp
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/example4.cpp
 nanogui/opengl.h
 -
 nanogui/glutil.h

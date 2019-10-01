@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/example3.cpp
+/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/example3.cpp
 glad/glad.h
 -
 GLFW/glfw3.h

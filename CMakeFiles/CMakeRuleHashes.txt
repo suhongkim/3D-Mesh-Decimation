@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-b4c92459cb8288202f9ee40c22ebabf7 lib/nanogui/nanogui_resources.cpp
-208308510d05fa57705b913f1aa1d5d7 shader/frag.glsl.c
-a081fff12ce51fe1baccfb095ba1e9da shader/vert.glsl.c

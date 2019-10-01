@@ -2,26 +2,32 @@
 Quadric-based Mesh Decimation Via Multiple Choices Algorithm
 
 ## Getting Started
+This code is the impelementation of a mesh decimation algorithm based on the quadric-based errors with winged edge data structure. Since the input mesh is assumed as a closed manifold triangle mesh, I've implemented only edge collapse, not vertex pair collapse. Multiple choice scheme is used for the outer optimization. 
+ 
+ This code is implemented based on two papers:["Surface Simplification Using Quadric Error Metrics"](http://mgarland.org/files/papers/quadrics.pdf),and ["Fast Mesh Decimation by Multiple-Choice Techniques"](http://www.graphics.rwth-aachen.de/media/papers/mcd_vmv021.pdf). 
+ Also, [NanoGUI](https://nanogui.readthedocs.io/en/latest/) is used to render the object, the first sample codes for nanugui is provided by [Wallace Lira](http://www.sfu.ca/~wpintoli/) but most of them are modified in this code.
 
-Poisson Blending is implemented with sparse matrix to solve the linear equation (Ax=b). It can
-handle gray or RGB image by recursive method. 
 
 ### Prerequisites
-
-
-
-```
-MATLAB2018 
-```
+This code is implemented with C++11 and tested on Linux 16.04. Nanogui is already included in this code directory. 
 
 ### Run
-Select background and target images in main.m, then execute main.m
-Default images in 'image' folder
 ```
-main
+cd <path-to-folder>
+cmake .
+make
+./mcaq
 ```
+you can import example meshes from ./objs directory using NanoGUI interface.
+
 ## Result
-![](./screenshots/black.jpg)
+Before decimation,
+![](./screenshots/nanogui1.jpg)
+
+
+After decimation, 
+![](./screenshots/nanogui2.jpg)
+
 
 
 ## Author
@@ -30,6 +36,4 @@ Suhong Kim – [@github](https://github.com/suhongkim) – suhongkim11@gmail.com
 Distributed under the MIT license. See the [LICENSE.md](LICENSE.md) file for details
 
 ## Inspiration
-This project is a part of the CMPT743 assignments at SFU. My implementation is poisson_blend.m, and others are from the skeleton [code](https://drive.google.com/file/d/1rSOQUHlr4j6_6t22hyBRFSaWaRqseNcs/view).\
-Please check [the website](https://sites.google.com/site/alimahdaviamiri/teaching/cmpt-743) if you need. 
-
+This project is done  for CMPT764 ["Geometry Modeling in Computer Graphics"](https://www2.cs.sfu.ca/~haoz/teaching/cmpt464/index.html)(Spring2019) at SFU. 

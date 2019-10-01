@@ -48,13 +48,46 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/Blog/3D_Mesh_Decimation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/Blog/3D_Mesh_Decimation
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -89,38 +122,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext_build/glfw/CMakeFiles/progress.marks
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles 0
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext_build/glfw/CMakeFiles/progress.marks
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/clean
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -130,17 +141,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/preinstall
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/preinstall
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(MAKE) -f CMakeFiles/Makefile2 lib/nanogui/ext_build/glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -149,11 +160,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... list_install_components"
 .PHONY : help
 
 
@@ -165,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

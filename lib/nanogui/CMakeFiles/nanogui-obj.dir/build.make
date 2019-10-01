@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
+CMAKE_SOURCE_DIR = /home/suhongk/Documents/Blog/3D_Mesh_Decimation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/suhongk/Documents/CMPT764_CG/assignment2
+CMAKE_BINARY_DIR = /home/suhongk/Documents/Blog/3D_Mesh_Decimation
 
 # Include any dependencies generated for this target.
 include lib/nanogui/CMakeFiles/nanogui-obj.dir/depend.make
@@ -60,24 +60,24 @@ include lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/nanogui_resources.cpp: lib/nanogui/resources/Roboto-Bold.ttf
 lib/nanogui/nanogui_resources.cpp: lib/nanogui/resources/Roboto-Regular.ttf
 lib/nanogui/nanogui_resources.cpp: lib/nanogui/resources/entypo.ttf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running bin2c"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cmake -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/resources/Roboto-Bold.ttf,/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/resources/Roboto-Regular.ttf,/home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/resources/entypo.ttf -P /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/resources/bin2c.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running bin2c"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/cmake -DOUTPUT_C=nanogui_resources.cpp -DOUTPUT_H=nanogui_resources.h -DINPUT_FILES=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/resources/Roboto-Bold.ttf,/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/resources/Roboto-Regular.ttf,/home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/resources/entypo.ttf -P /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/resources/bin2c.cmake
 
 lib/nanogui/nanogui_resources.h: lib/nanogui/nanogui_resources.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate lib/nanogui/nanogui_resources.h
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o: lib/nanogui/ext/nanovg/src/nanovg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-unused-result -o CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o   -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/nanovg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-unused-result -o CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o   -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/nanovg.c
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-unused-result -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/nanovg.c > CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-unused-result -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/nanovg.c > CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-unused-result -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/ext/nanovg/src/nanovg.c -o CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-unused-result -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/ext/nanovg/src/nanovg.c -o CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o.requires:
 
@@ -92,16 +92,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o.provides.build:
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o: lib/nanogui/nanogui_resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/nanogui_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/nanogui_resources.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/nanogui_resources.cpp > CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/nanogui_resources.cpp > CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/nanogui_resources.cpp -o CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/nanogui_resources.cpp -o CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o.requires:
 
@@ -116,16 +116,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o.provides.build: l
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o: lib/nanogui/src/glutil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glutil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/glutil.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/glutil.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glutil.cpp > CMakeFiles/nanogui-obj.dir/src/glutil.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/glutil.cpp > CMakeFiles/nanogui-obj.dir/src/glutil.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/glutil.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glutil.cpp -o CMakeFiles/nanogui-obj.dir/src/glutil.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/glutil.cpp -o CMakeFiles/nanogui-obj.dir/src/glutil.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o.requires:
 
@@ -140,16 +140,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o: lib/nanogui/src/common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/common.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/common.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/common.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/common.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/common.cpp > CMakeFiles/nanogui-obj.dir/src/common.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/common.cpp > CMakeFiles/nanogui-obj.dir/src/common.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/common.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/common.cpp -o CMakeFiles/nanogui-obj.dir/src/common.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/common.cpp -o CMakeFiles/nanogui-obj.dir/src/common.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o.requires:
 
@@ -164,16 +164,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o: lib/nanogui/src/widget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/widget.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/widget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/widget.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/widget.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/widget.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/widget.cpp > CMakeFiles/nanogui-obj.dir/src/widget.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/widget.cpp > CMakeFiles/nanogui-obj.dir/src/widget.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/widget.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/widget.cpp -o CMakeFiles/nanogui-obj.dir/src/widget.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/widget.cpp -o CMakeFiles/nanogui-obj.dir/src/widget.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o.requires:
 
@@ -188,16 +188,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o: lib/nanogui/src/theme.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/theme.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/theme.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/theme.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/theme.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/theme.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/theme.cpp > CMakeFiles/nanogui-obj.dir/src/theme.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/theme.cpp > CMakeFiles/nanogui-obj.dir/src/theme.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/theme.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/theme.cpp -o CMakeFiles/nanogui-obj.dir/src/theme.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/theme.cpp -o CMakeFiles/nanogui-obj.dir/src/theme.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o.requires:
 
@@ -212,16 +212,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o.provides.build: lib/nanog
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o: lib/nanogui/src/layout.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/layout.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/layout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/layout.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/layout.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/layout.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/layout.cpp > CMakeFiles/nanogui-obj.dir/src/layout.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/layout.cpp > CMakeFiles/nanogui-obj.dir/src/layout.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/layout.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/layout.cpp -o CMakeFiles/nanogui-obj.dir/src/layout.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/layout.cpp -o CMakeFiles/nanogui-obj.dir/src/layout.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o.requires:
 
@@ -236,16 +236,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o: lib/nanogui/src/screen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/screen.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/screen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/screen.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/screen.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/screen.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/screen.cpp > CMakeFiles/nanogui-obj.dir/src/screen.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/screen.cpp > CMakeFiles/nanogui-obj.dir/src/screen.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/screen.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/screen.cpp -o CMakeFiles/nanogui-obj.dir/src/screen.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/screen.cpp -o CMakeFiles/nanogui-obj.dir/src/screen.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o.requires:
 
@@ -260,16 +260,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o: lib/nanogui/src/label.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/label.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/label.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/label.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/label.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/label.cpp > CMakeFiles/nanogui-obj.dir/src/label.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/label.cpp > CMakeFiles/nanogui-obj.dir/src/label.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/label.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/label.cpp -o CMakeFiles/nanogui-obj.dir/src/label.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/label.cpp -o CMakeFiles/nanogui-obj.dir/src/label.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o.requires:
 
@@ -284,16 +284,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o.provides.build: lib/nanog
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o: lib/nanogui/src/window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/window.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/window.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/window.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/window.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/window.cpp > CMakeFiles/nanogui-obj.dir/src/window.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/window.cpp > CMakeFiles/nanogui-obj.dir/src/window.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/window.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/window.cpp -o CMakeFiles/nanogui-obj.dir/src/window.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/window.cpp -o CMakeFiles/nanogui-obj.dir/src/window.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o.requires:
 
@@ -308,16 +308,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o: lib/nanogui/src/popup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/popup.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/popup.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/popup.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/popup.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popup.cpp > CMakeFiles/nanogui-obj.dir/src/popup.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/popup.cpp > CMakeFiles/nanogui-obj.dir/src/popup.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/popup.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popup.cpp -o CMakeFiles/nanogui-obj.dir/src/popup.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/popup.cpp -o CMakeFiles/nanogui-obj.dir/src/popup.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o.requires:
 
@@ -332,16 +332,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o.provides.build: lib/nanog
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o: lib/nanogui/src/checkbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/checkbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/checkbox.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/checkbox.cpp > CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/checkbox.cpp > CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/checkbox.cpp -o CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/checkbox.cpp -o CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o.requires:
 
@@ -356,16 +356,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o.provides.build: lib/na
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o: lib/nanogui/src/button.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/button.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/button.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/button.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/button.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/button.cpp > CMakeFiles/nanogui-obj.dir/src/button.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/button.cpp > CMakeFiles/nanogui-obj.dir/src/button.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/button.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/button.cpp -o CMakeFiles/nanogui-obj.dir/src/button.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/button.cpp -o CMakeFiles/nanogui-obj.dir/src/button.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o.requires:
 
@@ -380,16 +380,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o: lib/nanogui/src/popupbutton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popupbutton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/popupbutton.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popupbutton.cpp > CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/popupbutton.cpp > CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/popupbutton.cpp -o CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/popupbutton.cpp -o CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o.requires:
 
@@ -404,16 +404,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o.provides.build: lib
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o: lib/nanogui/src/combobox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/combobox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/combobox.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/combobox.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/combobox.cpp > CMakeFiles/nanogui-obj.dir/src/combobox.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/combobox.cpp > CMakeFiles/nanogui-obj.dir/src/combobox.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/combobox.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/combobox.cpp -o CMakeFiles/nanogui-obj.dir/src/combobox.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/combobox.cpp -o CMakeFiles/nanogui-obj.dir/src/combobox.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o.requires:
 
@@ -428,16 +428,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o.provides.build: lib/na
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o: lib/nanogui/src/progressbar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/progressbar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/progressbar.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/progressbar.cpp > CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/progressbar.cpp > CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/progressbar.cpp -o CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/progressbar.cpp -o CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o.requires:
 
@@ -452,16 +452,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o.provides.build: lib
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o: lib/nanogui/src/slider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/slider.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/slider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/slider.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/slider.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/slider.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/slider.cpp > CMakeFiles/nanogui-obj.dir/src/slider.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/slider.cpp > CMakeFiles/nanogui-obj.dir/src/slider.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/slider.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/slider.cpp -o CMakeFiles/nanogui-obj.dir/src/slider.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/slider.cpp -o CMakeFiles/nanogui-obj.dir/src/slider.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o.requires:
 
@@ -476,16 +476,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o.provides.build: lib/nano
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o: lib/nanogui/src/messagedialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/messagedialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/messagedialog.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/messagedialog.cpp > CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/messagedialog.cpp > CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/messagedialog.cpp -o CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/messagedialog.cpp -o CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o.requires:
 
@@ -500,16 +500,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o.provides.build: l
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o: lib/nanogui/src/textbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/textbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/textbox.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/textbox.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/textbox.cpp > CMakeFiles/nanogui-obj.dir/src/textbox.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/textbox.cpp > CMakeFiles/nanogui-obj.dir/src/textbox.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/textbox.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/textbox.cpp -o CMakeFiles/nanogui-obj.dir/src/textbox.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/textbox.cpp -o CMakeFiles/nanogui-obj.dir/src/textbox.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o.requires:
 
@@ -524,16 +524,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o.provides.build: lib/nan
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o: lib/nanogui/src/imagepanel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imagepanel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/imagepanel.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imagepanel.cpp > CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/imagepanel.cpp > CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imagepanel.cpp -o CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/imagepanel.cpp -o CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o.requires:
 
@@ -548,16 +548,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o.provides.build: lib/
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o: lib/nanogui/src/imageview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imageview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/imageview.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/imageview.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imageview.cpp > CMakeFiles/nanogui-obj.dir/src/imageview.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/imageview.cpp > CMakeFiles/nanogui-obj.dir/src/imageview.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/imageview.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/imageview.cpp -o CMakeFiles/nanogui-obj.dir/src/imageview.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/imageview.cpp -o CMakeFiles/nanogui-obj.dir/src/imageview.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o.requires:
 
@@ -572,16 +572,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o.provides.build: lib/n
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o: lib/nanogui/src/vscrollpanel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/vscrollpanel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/vscrollpanel.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/vscrollpanel.cpp > CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/vscrollpanel.cpp > CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/vscrollpanel.cpp -o CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/vscrollpanel.cpp -o CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o.requires:
 
@@ -596,16 +596,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o.provides.build: li
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o: lib/nanogui/src/colorwheel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorwheel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/colorwheel.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorwheel.cpp > CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/colorwheel.cpp > CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorwheel.cpp -o CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/colorwheel.cpp -o CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o.requires:
 
@@ -620,16 +620,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o.provides.build: lib/
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o: lib/nanogui/src/colorpicker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorpicker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/colorpicker.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorpicker.cpp > CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/colorpicker.cpp > CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/colorpicker.cpp -o CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/colorpicker.cpp -o CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o.requires:
 
@@ -644,16 +644,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o.provides.build: lib
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o: lib/nanogui/src/graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/graph.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/graph.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/graph.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/graph.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/graph.cpp > CMakeFiles/nanogui-obj.dir/src/graph.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/graph.cpp > CMakeFiles/nanogui-obj.dir/src/graph.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/graph.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/graph.cpp -o CMakeFiles/nanogui-obj.dir/src/graph.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/graph.cpp -o CMakeFiles/nanogui-obj.dir/src/graph.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o.requires:
 
@@ -668,16 +668,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o.provides.build: lib/nanog
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o: lib/nanogui/src/stackedwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/stackedwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/stackedwidget.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/stackedwidget.cpp > CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/stackedwidget.cpp > CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/stackedwidget.cpp -o CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/stackedwidget.cpp -o CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o.requires:
 
@@ -692,16 +692,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o.provides.build: l
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o: lib/nanogui/src/tabheader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabheader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/tabheader.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabheader.cpp > CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/tabheader.cpp > CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabheader.cpp -o CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/tabheader.cpp -o CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o.requires:
 
@@ -716,16 +716,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o.provides.build: lib/n
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o: lib/nanogui/src/tabwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/tabwidget.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabwidget.cpp > CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/tabwidget.cpp > CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/tabwidget.cpp -o CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/tabwidget.cpp -o CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o.requires:
 
@@ -740,16 +740,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o.provides.build: lib/n
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o: lib/nanogui/src/glcanvas.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glcanvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/glcanvas.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glcanvas.cpp > CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/glcanvas.cpp > CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/glcanvas.cpp -o CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/glcanvas.cpp -o CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o.requires:
 
@@ -764,16 +764,16 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o.provides.build: lib/na
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o: lib/nanogui/CMakeFiles/nanogui-obj.dir/flags.make
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o: lib/nanogui/src/serializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/CMPT764_CG/assignment2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o -c /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/serializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/suhongk/Documents/Blog/3D_Mesh_Decimation/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o"
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o -c /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/serializer.cpp
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nanogui-obj.dir/src/serializer.cpp.i"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/serializer.cpp > CMakeFiles/nanogui-obj.dir/src/serializer.cpp.i
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/serializer.cpp > CMakeFiles/nanogui-obj.dir/src/serializer.cpp.i
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nanogui-obj.dir/src/serializer.cpp.s"
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/src/serializer.cpp -o CMakeFiles/nanogui-obj.dir/src/serializer.cpp.s
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/src/serializer.cpp -o CMakeFiles/nanogui-obj.dir/src/serializer.cpp.s
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o.requires:
 
@@ -859,11 +859,11 @@ lib/nanogui/CMakeFiles/nanogui-obj.dir/requires: lib/nanogui/CMakeFiles/nanogui-
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/requires
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/clean:
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui-obj.dir/cmake_clean.cmake
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui-obj.dir/cmake_clean.cmake
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/clean
 
 lib/nanogui/CMakeFiles/nanogui-obj.dir/depend: lib/nanogui/nanogui_resources.cpp
 lib/nanogui/CMakeFiles/nanogui-obj.dir/depend: lib/nanogui/nanogui_resources.h
-	cd /home/suhongk/Documents/CMPT764_CG/assignment2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_CG/assignment2 /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui /home/suhongk/Documents/CMPT764_CG/assignment2/lib/nanogui/CMakeFiles/nanogui-obj.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/suhongk/Documents/Blog/3D_Mesh_Decimation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/suhongk/Documents/Blog/3D_Mesh_Decimation /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui /home/suhongk/Documents/Blog/3D_Mesh_Decimation /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui /home/suhongk/Documents/Blog/3D_Mesh_Decimation/lib/nanogui/CMakeFiles/nanogui-obj.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/nanogui/CMakeFiles/nanogui-obj.dir/depend
 
