@@ -22,11 +22,11 @@ you can import example meshes from ./objs directory using NanoGUI interface.
 
 ## Result
 Before decimation,
-![](./screenshots/nanogui1.jpg)
+![](./screenshots/nanogui1.png)
 
 
 After decimation, 
-![](./screenshots/nanogui2.jpg)
+![](./screenshots/nanogui2.png)
 
 
 
